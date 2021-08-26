@@ -2,7 +2,7 @@
     <ion-page>
         <ion-content>
             <ion-header>
-                <ion-img  src="../imagenes/señalarTexto.png"></ion-img>
+                <ion-img src="../imagenes/senialar_texto.png"></ion-img>
             </ion-header>
             <div class="menuAccesos">
                 <ion-button id="boton1" class="menuBotones">ABECEDARIO</ion-button>
@@ -10,7 +10,7 @@
                 <ion-button id="boton3" class="menuBotones">COLORES</ion-button>
                 <ion-button id="boton4" class="menuBotones">ACCIONES</ion-button>
                 <ion-button id="boton5" class="menuBotones">CONCEPTOS</ion-button>
-                <ion-button id="volver" class="menuVolver">VOLVER</ion-button>
+                <ion-button id="volver" class="menuVolver" router-link="./EleccionQueHacer.vue">VOLVER</ion-button>
             </div>
         </ion-content>
     </ion-page>
