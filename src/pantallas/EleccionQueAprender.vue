@@ -7,7 +7,7 @@
                 <ion-button id="botonA">COLORES</ion-button>
                 <ion-button id="botonA">ACCIONES</ion-button>
                 <ion-button id="botonA">CONCEPTOS</ion-button>
-                <ion-button id="botonV">VOLVER</ion-button>
+                <ion-button id="botonV" router-link="/EleccionQueHacer">VOLVER</ion-button>
             </div>
         </ion-content>
     </ion-page>

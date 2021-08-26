@@ -32,13 +32,15 @@ export default {
 
 .div{
 
-    padding-top:60px ;
+    border-top:5px ;
     padding: 55px;
+    border-style:var(--border-color #E7E40D)
 }
 
 #bttPracticar{
     border-block-color: #E7E40D ;
     --background:#FF68E7 ;
+    
 }
 
 #bttEstudiar{
