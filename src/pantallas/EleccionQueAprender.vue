@@ -1,38 +1,46 @@
 <template>
     <ion-page>
         <ion-content>
-            <div class="menuBotones">
-                <ion-button id="botonA">ABECEDARIO</ion-button>
-                <ion-button id="botonA">NUMEROS</ion-button>
-                <ion-button id="botonA">COLORES</ion-button>
-                <ion-button id="botonA">ACCIONES</ion-button>
-                <ion-button id="botonA">CONCEPTOS</ion-button>
-                <ion-button id="botonV" router-link="/EleccionQueHacer">VOLVER</ion-button>
+
+
+            <ion-header>
+                <ion-img  src="../imagenes/señalarTexto.png"></ion-img>
+            </ion-header>
+            <div class="menuAccesos">
+                <ion-button id="boton1" class="menuBotones">ABECEDARIO</ion-button>
+                <ion-button id="boton2" class="menuBotones">NUMEROS</ion-button>
+                <ion-button id="boton3" class="menuBotones">COLORES</ion-button>
+                <ion-button id="boton4" class="menuBotones">ACCIONES</ion-button>
+                <ion-button id="boton5" class="menuBotones">CONCEPTOS</ion-button>
+                <ion-button id="volver" class="menuVolver" router-link="/EleccionQueHacer">VOLVER</ion-button>
+
             </div>
         </ion-content>
     </ion-page>
 </template>
 
 <script>
-import { IonButton, IonPage, IonContent} from "@ionic/vue";
+import { IonButton, IonPage, IonContent, IonHeader, IonImg} from "@ionic/vue";
 export default {
     components: {
         IonButton,
         IonPage,
         IonContent,
+        IonHeader,
+        IonImg
     }
 }
 
 </script>
 <style scoped> /* estilo */
-    .menuBotones{
+    .menuAccesos{
         display: block;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
         padding-top: 28px;
     }
-    #botonA {
+    .menuBotones{
         --background: #E7E40D;
         --border-color: black;
         --border-style: solid;
@@ -46,7 +54,7 @@ export default {
         letter-spacing: 0px;
         margin-bottom: 20px; 
     }
-    #botonV {
+    .menuVolver {
         --background: #FF68E7;
         --border-color: black;
         --border-radius: 50px;
