@@ -10,13 +10,15 @@
     </div>
 </template>
 <script>
+    import { store, mutations } from '@/store.js'
+
     export default {
-        data: () => ({
-            isPanelOpen: true
-        }),
         methods: {
-            closeSidebarPanel() {
-                this.isPanelOpen = false
+            closeSidebarPanel: mutations.toggleNav
+        },
+        computed: {
+            isPanelOpen() {
+                return store.isNavOpen
             }
         }
     }
@@ -35,7 +37,7 @@
     }
 
     .sidebar-backdrop {
-        background-color: rgba(0,0,0,.5);
+        background-color: rgba(19, 15, 64, .4);
         width: 100vw;
         height: 100vh;
         position: fixed;
