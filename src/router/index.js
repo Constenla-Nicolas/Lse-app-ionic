@@ -2,11 +2,12 @@ import { createRouter, createWebHistory } from '@ionic/vue-router';
 import Bienvenido from '../pantallas/Bienvenido.vue';
 import EleccionQueHacer from '../pantallas/EleccionQueHacer.vue';
 import TransicionVioletaClaro from '../pantallas/TransicionVioletaClaro.vue';
+import EleccionQueAprender from "../pantallas/EleccionQueAprender.vue"
 
 const routes = [
   {
     path: '/',
-    redirect: '/bienvenido'
+    redirect: '/eleccionQueAprender'
   },
   {
     path: '/bienvenido',
@@ -19,6 +20,10 @@ const routes = [
   {
     path: '/transicionVioletaClaro',
     component: TransicionVioletaClaro,
+  },
+  {
+    path: '/eleccionQueAprender',
+    component: EleccionQueAprender,
   },
 ]
 
