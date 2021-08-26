@@ -3,11 +3,10 @@
         <ion-content>
             <div id="todo"></div>
 
-            
+             <ion-button router-link="/transicionVioletaClaro">Comenzar</ion-button>
+             <router-view></router-view>
 
-            <router-link to="/eleccionQueHacer"> </router-link>
-            <router-view></router-view>
-            
+        
 
         </ion-content>  
     </ion-page>
