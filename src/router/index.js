@@ -7,7 +7,7 @@ import EleccionQueAprender from "../pantallas/EleccionQueAprender.vue"
 const routes = [
   {
     path: '/',
-    redirect: '/eleccionQueAprender'
+    redirect: '/bienvenido'
   },
   {
     path: '/bienvenido',

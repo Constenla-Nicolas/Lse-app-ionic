@@ -1,4 +1,6 @@
+
 <template>
+
     <ion-page>
         <ion-content>
             <ion-header>
@@ -14,11 +16,16 @@
             </div>
         </ion-content>
     </ion-page>
+
 </template>
 
+
 <script>
+
 import { IonButton, IonPage, IonContent, IonHeader, IonImg} from "@ionic/vue";
 export default {
+     
+  
     components: {
         IonButton,
         IonPage,
