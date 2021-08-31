@@ -21,7 +21,9 @@
     "com.telerik.plugins.nativepagetransitions": "^0.7.0",
     "core-js": "^3.6.5",
     "vue": "^3.2.1",
-    "vue-router": "^4.0.0-0"
+    "vue-router": "^4.0.0-0",
+    "vue-sidebar-menu": "^5.0.1",
+    "vuesax": "^4.0.1-alpha.25"
   },
   "devDependencies": {
     "@capacitor/cli": "3.1.2",

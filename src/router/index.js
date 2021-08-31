@@ -13,7 +13,7 @@ import Conceptos from "../pantallas/pantallas_aprender/Conceptos.vue"
 const routes = [
   {
     path: '/',
-    redirect: '/eleccionQueAprender'
+    redirect: '/bienvenido'
   },
   {
     path: '/bienvenido',
