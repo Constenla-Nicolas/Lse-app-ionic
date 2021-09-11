@@ -4,7 +4,7 @@
             <div id="contenedorImagenes">
 
                     <div id="cuadroAmarillo">
-                        <img id="letraImagen" src="" alt="" loading="lazy">
+                         <img id="señalarLogo" src="../imagenes/senialar_texto.png">
                     </div>
 
             </div>
@@ -63,6 +63,11 @@ export default {
         IonButton,
         IonPage,
         IonContent,
+    },
+    methods: {
+        cambiarImagen() {
+    alert(window.location.pathname);
+}
     }
 }
 
