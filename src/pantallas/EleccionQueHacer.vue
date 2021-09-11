@@ -3,7 +3,7 @@
         <ion-content>
             <ion-header >
                 <ion-toolbar>
-                <img id="señalarLogo" src="../imagenes/señalarTexto.png">
+                <img id="señalarLogo" src="../imagenes/senialar_texto.png">
                 </ion-toolbar>
             </ion-header>
             <div class="upperPart">
