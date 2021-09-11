@@ -6,6 +6,12 @@
                 <img id="señalarLogo" src="../imagenes/señalarTexto.png">
                 </ion-toolbar>
             </ion-header>
+            <div class="upperPart">
+
+
+
+
+            </div>   
         <div class="div" >
            <ion-button id="bttEstudiar" router-link="/EleccionQueAprender">ESTUDIAR</ion-button>
            <br> 
@@ -53,10 +59,22 @@ export default {
     text-align: center;
     border-top:5px ;
     margin-top: 10%;
+    border-top:2px ;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 30px 0px 0px 40px;
+    border-style:solid;
+    border-top-color: #553071 ;
+}
+
+.upperPart{
+padding: 25px;  
+
 }
 
 #bttPracticar{
-    border-block-color: #E7E40D ;
+    
     --background:#FF68E7 ;
     
 }
