@@ -2,43 +2,64 @@
     <ion-page>
         <ion-content>
 
-
-            <ion-header>
-                <ion-img  src="../imagenes/señalarTexto.png"></ion-img>
+            <ion-header >
+                <ion-toolbar>
+                <img id="señalarLogo" src="../imagenes/señalarTexto.png">
+                </ion-toolbar>
             </ion-header>
             <div class="menuAccesos">
-                <ion-button id="boton1" class="menuBotones">ABECEDARIO</ion-button>
+                <ion-button id="boton1" class="menuBotones" router-link="/abecedario">ABECEDARIO</ion-button>
                 <ion-button id="boton2" class="menuBotones">NUMEROS</ion-button>
                 <ion-button id="boton3" class="menuBotones">COLORES</ion-button>
                 <ion-button id="boton4" class="menuBotones">ACCIONES</ion-button>
                 <ion-button id="boton5" class="menuBotones">CONCEPTOS</ion-button>
                 <ion-button id="volver" class="menuVolver" router-link="/EleccionQueHacer">VOLVER</ion-button>
-
-            </div>
+            </div>       
         </ion-content>
     </ion-page>
 </template>
 
 <script>
-import { IonButton, IonPage, IonContent, IonHeader, IonImg} from "@ionic/vue";
+import { IonButton, IonPage, IonContent, IonHeader,IonToolbar} from "@ionic/vue";
 export default {
     components: {
         IonButton,
         IonPage,
         IonContent,
         IonHeader,
-        IonImg
+        IonToolbar,
     }
 }
 
 </script>
 <style scoped> /* estilo */
+    ion-toolbar{
+        box-shadow: 0px -25px 50px black;
+    }
     .menuAccesos{
         display: block;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
         padding-top: 28px;
+    }
+    #contenido{
+        position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+
+    width: 100%;
+    height: 100%;
+    }
+    #señalarLogo{
+        width: 43%;
+        margin-left: 4%;
+    }
+    img{
+        
     }
     .menuBotones{
         --background: #E7E40D;
@@ -49,10 +70,10 @@ export default {
         text-transform:unset;
         font-size: 36px;
         width: 311px;
-        height: 85px;
+        height: 73px;
         --box-shadow: 1px 1px 9px black;
         letter-spacing: 0px;
-        margin-bottom: 20px; 
+        margin-bottom: 12px; 
     }
     .menuVolver {
         --background: #FF68E7;

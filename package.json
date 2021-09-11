@@ -10,6 +10,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@capacitor/android": "3.2.2",
     "@capacitor/app": "1.0.2",
     "@capacitor/core": "3.1.2",
     "@capacitor/haptics": "1.0.2",
@@ -18,10 +19,13 @@
     "@ionic-native/native-page-transitions": "^5.35.0",
     "@ionic/vue": "^5.4.0",
     "@ionic/vue-router": "^5.4.0",
+    "bootstrap": "^5.1.0",
+    "bootstrap-vue": "^2.21.2",
     "com.telerik.plugins.nativepagetransitions": "^0.7.0",
     "core-js": "^3.6.5",
     "vue": "^3.2.1",
-    "vue-router": "^4.0.0-0"
+    "vue-router": "^4.0.0-0",
+    "vue-sidebar-menu": "^5.0.1"
   },
   "devDependencies": {
     "@capacitor/cli": "3.1.2",
