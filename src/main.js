@@ -8,7 +8,6 @@ import 'vue-sidebar-menu/dist/vue-sidebar-menu.css'
 
 const app = createApp(App)
 
-
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/vue/css/core.css';
 
