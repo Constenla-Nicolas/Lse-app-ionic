@@ -1,7 +1,12 @@
 <template>
     <ion-page>
         <ion-content>
+            <div class="upperPart">
 
+
+
+
+            </div>   
         <div class="div" >
            <ion-button id="bttEstudiar" router-link="/EleccionQueAprender">Estudiar</ion-button>
             <ion-button id="bttPracticar" router-link="/EleccionQueHacer">Practicar</ion-button>
@@ -30,15 +35,24 @@ export default {
 
 <style scoped>
 
+.upperPart{
+padding: 25px;  
+
+}
+
 .div{
 
-    border-top:5px ;
-    padding: 55px;
-    border-style:var(--border-color #E7E40D)
+    border-top:2px ;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 30px 0px 0px 40px;
+    border-style:solid;
+    border-top-color: #553071 ;
 }
 
 #bttPracticar{
-    border-block-color: #E7E40D ;
+    
     --background:#FF68E7 ;
     
 }

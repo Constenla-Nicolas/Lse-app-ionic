@@ -203,7 +203,7 @@ http://ionicframework.com/docs/theming/ */
    * Material Design Dark Theme
    * -------------------------------------------
    */
-
+/*
   .md body {
     --ion-background-color: #121212;
     --ion-background-color-rgb: 18,18,18;
@@ -241,4 +241,5 @@ http://ionicframework.com/docs/theming/ */
 
     --ion-card-background: #1e1e1e;
   }
+  */
 }

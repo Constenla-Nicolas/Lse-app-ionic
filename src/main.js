@@ -4,8 +4,6 @@ import router from './router';
 
 import { IonicVue } from '@ionic/vue';
 
-import 'vue-sidebar-menu/dist/vue-sidebar-menu.css'
-
 const app = createApp(App)
 
 

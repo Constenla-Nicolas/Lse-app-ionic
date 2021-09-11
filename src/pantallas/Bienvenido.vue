@@ -8,7 +8,7 @@
             <br>
             <br>
             <br>
-            <ion-button router-link="/transicionVioletaClaro">Comenzar</ion-button>
+            <ion-button router-link="/EleccionQueHacer">Comenzar</ion-button>
              <router-view></router-view>
         </div>
         </ion-content>  
