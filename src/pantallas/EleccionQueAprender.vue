@@ -1,27 +1,31 @@
+
 <template>
+
     <ion-page>
         <ion-content>
-
-            <ion-header >
-                <ion-toolbar>
-                <img id="señalarLogo" src="../imagenes/señalarTexto.png">
-                </ion-toolbar>
+            <ion-header>
+                <ion-img src="../imagenes/senialar_texto.png"></ion-img>
             </ion-header>
             <div class="menuAccesos">
-                <ion-button id="boton1" class="menuBotones" router-link="/abecedario">ABECEDARIO</ion-button>
-                <ion-button id="boton2" class="menuBotones">NUMEROS</ion-button>
-                <ion-button id="boton3" class="menuBotones">COLORES</ion-button>
-                <ion-button id="boton4" class="menuBotones">ACCIONES</ion-button>
-                <ion-button id="boton5" class="menuBotones">CONCEPTOS</ion-button>
-                <ion-button id="volver" class="menuVolver" router-link="/EleccionQueHacer">VOLVER</ion-button>
-            </div>       
+                <ion-button id="boton1" class="menuBotones" router-link="./pantallas_aprender/Abecedario.vue.vue">ABECEDARIO</ion-button>
+                <ion-button id="boton2" class="menuBotones" router-link="./pantallas_aprender/Numeros.vue">NUMEROS</ion-button>
+                <ion-button id="boton3" class="menuBotones" router-link="./pantallas_aprender/Colores.vue">COLORES</ion-button>
+                <ion-button id="boton4" class="menuBotones" router-link="./pantallas_aprender/Acciones.vue">ACCIONES</ion-button>
+                <ion-button id="boton5" class="menuBotones" router-link="./pantallas_aprender/Conceptos.vue">CONCEPTOS</ion-button>
+                <ion-button id="volver" class="menuVolver" router-link="./EleccionQueHacer.vue">VOLVER</ion-button>
+            </div>
         </ion-content>
     </ion-page>
+
 </template>
 
+
 <script>
-import { IonButton, IonPage, IonContent, IonHeader,IonToolbar} from "@ionic/vue";
+
+import { IonButton, IonPage, IonContent, IonHeader, IonImg} from "@ionic/vue";
 export default {
+     
+  
     components: {
         IonButton,
         IonPage,
@@ -57,9 +61,6 @@ export default {
     #señalarLogo{
         width: 43%;
         margin-left: 4%;
-    }
-    img{
-        
     }
     .menuBotones{
         --background: #E7E40D;
