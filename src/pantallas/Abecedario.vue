@@ -4,7 +4,7 @@
             <div id="contenedorImagenes">
 
                     <div id="cuadroAmarillo">
-                         <img id="señalarLogo" src="../imagenes/senialar_texto.png">
+                         <img id="contenedorImagen" src="../imagenes/letras/A.jpg">
                     </div>
 
             </div>
@@ -14,7 +14,7 @@
             </div>
 
             <div class="contenido" >
-            <ion-button @click= "cambiarImagen()" class="botonLetra" id="buttonA">A</ion-button>
+            <ion-button @click= "cambiarImagen(contenedorImagen)" class="botonLetra" id="buttonA">A</ion-button>
             <ion-button class="botonLetra" id="buttonB">B</ion-button>
             <ion-button class="botonLetra" id="buttonC">C</ion-button>
             <ion-button class="botonLetra" id="buttonD">D</ion-button>
@@ -65,9 +65,9 @@ export default {
         IonContent,
     },
     methods: {
-        cambiarImagen() {
-    alert(window.location.pathname);
-}
+        cambiarImagen(img) {
+            document.getElementById(img).src = "../imagenes/letras/B.jpg";
+                           }
     }
 }
 
