@@ -4,13 +4,7 @@ import router from './router';
 
 import { IonicVue } from '@ionic/vue';
 
-<<<<<<< HEAD
-import 'vue-sidebar-menu/dist/vue-sidebar-menu.css'
-
-=======
->>>>>>> 310fab92038f70355fa7ddc2848a8308cab1a73b
 const app = createApp(App)
-
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/vue/css/core.css';
