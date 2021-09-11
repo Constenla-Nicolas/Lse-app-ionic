@@ -1,25 +1,48 @@
 <template>
     <ion-page>
         <ion-content>
-            <div class="slideshow-container">
-
-                <!-- Full-width images with number and caption text -->
-                <div class="mySlides fade">
-                    <img src="img1.jpg" style="width:100%">
-                </div>
-
-                <div class="mySlides fade">
-                    <img src="img2.jpg" style="width:100%">
-                </div>
-
-                <div class="mySlides fade">
-                    <img src="img3.jpg" style="width:100%">
-                </div>
-
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
+            <ion-slides pager="true" :options="slideOpts">
+                <ion-slide>
+                    <h1>Slide 1</h1>
+                </ion-slide>
+                <ion-slide>
+                    <h1>Slide 2</h1>
+                </ion-slide>
+                <ion-slide>
+                    <h1>Slide 3</h1>
+                </ion-slide>
+            </ion-slides>
         </ion-content>
     </ion-page>
 </template>
+
+<script>
+import {IonPage, IonContent, IonSlides, IonSlide} from "@ionic/vue";
+
+import 'swiper/swiper-bundle.min.css';
+import '@ionic/vue/css/ionic-swiper.css';
+
+export default {
+    components:{
+        IonPage,
+        IonContent,
+        IonSlides,
+        IonSlide
+        
+    },
+    setup() {
+    // Optional parameters to pass to the swiper instance. See http://idangero.us/swiper/api/ for valid options.
+    const slideOpts = {
+      initialSlide: 1,
+      speed: 400
+    };
+    return { slideOpts }
+  }
+};
+ 
+</script>
+
+<style scoped>
+
+    
+</style>
