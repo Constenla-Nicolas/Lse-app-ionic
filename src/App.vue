@@ -8,6 +8,9 @@
 
   </ion-app>
    <div id="app">
+     <slider>
+       </slider>
+       
    <nav class="main-nav">
      <div class="logo">
        my.company
@@ -33,12 +36,14 @@
 <script>
 import { IonApp, IonRouterOutlet } from '@ionic/vue';
 import { defineComponent } from 'vue';
+import Slider from "./components/Slider.vue";
 
 export default defineComponent({
   name: 'App',
   components: {
     IonApp,
     IonRouterOutlet,
+    Slider,
   }
 });
 
