@@ -1,16 +1,20 @@
 <template>
     <ion-page>
         <ion-content>
-            <ion-slides pager="true" :options="slideOpts">
-                <ion-slide>
-                    <h1>Slide 1</h1>
-                </ion-slide>
-                <ion-slide>
-                    <h1>Slide 2</h1>
-                </ion-slide>
-                <ion-slide>
-                    <h1>Slide 3</h1>
-                </ion-slide>
+            <ion-slides ref="slides">
+              <ion-slide>
+                <img id="imagen" src="../imagenes/logo_icono.png">
+                <ion-p id="significa">SIGNIFICA</ion-p>
+                
+                <div id="significado">
+                      <ion-p id="nombreColor">AMARILLO</ion-p>
+                      <ion-p id="definicion">Color como el del oro, la banana, el sol, la yema de huevo. Es el tercer color del espectro solar.</ion-p>
+                </div>
+
+              </ion-slide>
+              <ion-slide>
+                <img src="../imagenes/logo_icono.png">
+              </ion-slide>
             </ion-slides>
         </ion-content>
     </ion-page>
@@ -19,29 +23,66 @@
 <script>
 import {IonPage, IonContent, IonSlides, IonSlide} from "@ionic/vue";
 
-import 'swiper/swiper-bundle.min.css';
-import '@ionic/vue/css/ionic-swiper.css';
 
 export default {
     components:{
         IonPage,
         IonContent,
-        IonSlides,
-        IonSlide
-        
+        IonSlide,
+        IonSlides,        
     },
-    setup() {
-    // Optional parameters to pass to the swiper instance. See http://idangero.us/swiper/api/ for valid options.
-    const slideOpts = {
-      initialSlide: 1,
-      speed: 400
-    }; /*ignorar este comentario */
-    return { slideOpts }
-  }
-};
- 
+    methods: {    
+      goTo(slideIndex) {      
+        // permite arrastrar la pantalla
+        this.$refs.slides.slideTo(slideIndex);
+      }
+    },
+}
 </script>
 
 <style scoped>
-
+#imagen{
+    border: yellow;
+    width: 248px;
+    height: 257px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 12%;
+    margin-bottom: 12px;
+}
+#significa{
+    color: #E7E40D;
+    text-transform:unset;
+    font-size: 36px;
+    width: 246px;
+    height: 70px;
+    letter-spacing: 0px;
+    margin-bottom: 12px; 
+}
+#significado{
+    background-color: #E7E40D;
+    width: 309px;
+    height: 187px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#nombreColor{
+    color: #553071;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 12px;
+}
+#definicion{
+    color: #553071;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
 </style>
