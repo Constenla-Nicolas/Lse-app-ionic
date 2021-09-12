@@ -23,11 +23,11 @@
     "bootstrap-vue": "^2.21.2",
     "com.telerik.plugins.nativepagetransitions": "^0.7.0",
     "core-js": "^3.6.5",
+    "swiper": "^6.8.4",
     "vue": "^3.2.1",
     "vue-router": "^4.0.0-0",
     "vue-sidebar-menu": "^5.0.1"
   },
-
   "devDependencies": {
     "@capacitor/cli": "3.1.2",
     "@vue/cli-plugin-babel": "~4.5.0",

@@ -2,11 +2,11 @@ import { createRouter, createWebHistory } from '@ionic/vue-router';
 import Bienvenido from '../pantallas/Bienvenido.vue';
 import EleccionQueHacer from '../pantallas/EleccionQueHacer.vue';
 import EleccionQueAprender from "../pantallas/EleccionQueAprender.vue"
-import Abecedario from "../pantallas/pantallas_aprender/Abecedario.vue"
-import Numeros from "../pantallas/pantallas_aprender/Numeros.vue"
-import Colores from "../pantallas/pantallas_aprender/Colores.vue"
-import Acciones from "../pantallas/pantallas_aprender/Acciones.vue"
-import Conceptos from "../pantallas/pantallas_aprender/Conceptos.vue"
+import Abecedario from "../pantallas/Abecedario.vue"
+import Numeros from "../pantallas/Numeros.vue"
+import Colores from "../pantallas/Colores.vue"
+import Acciones from "../pantallas/Acciones.vue"
+import Conceptos from "../pantallas/Conceptos.vue"
 
 
 const routes = [
