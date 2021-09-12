@@ -35,7 +35,7 @@ export default {
     const slideOpts = {
       initialSlide: 1,
       speed: 400
-    };
+    }; /*ignorar este comentario */
     return { slideOpts }
   }
 };
@@ -44,5 +44,4 @@ export default {
 
 <style scoped>
 
-    /*a */
 </style>
