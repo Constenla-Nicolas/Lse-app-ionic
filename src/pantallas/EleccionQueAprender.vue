@@ -4,9 +4,7 @@
     <ion-page>
         <ion-content>
             <ion-header>
-                <ion-toolbar>
-                <img id="señalarLogo" src="../imagenes/senialar_texto.png">
-                </ion-toolbar>
+                <ion-img src="../imagenes/senialar_texto.png"></ion-img>
             </ion-header>
             <div class="menuAccesos">
                 <ion-button id="boton1" class="menuBotones" router-link="/abecedario">ABECEDARIO</ion-button>
@@ -24,7 +22,7 @@
 
 <script>
 
-import { IonButton, IonPage, IonContent, IonHeader, IonToolbar} from "@ionic/vue";
+import { IonButton, IonPage, IonContent, IonHeader, IonImg} from "@ionic/vue";
 export default {
      
   
@@ -33,36 +31,19 @@ export default {
         IonPage,
         IonContent,
         IonHeader,
-        IonToolbar,
+        IonImg
     }
 }
+ 
 
 </script>
 <style scoped> /* estilo */
-    ion-toolbar{
-        box-shadow: 0px -25px 50px black;
-    }
     .menuAccesos{
         display: block;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
         padding-top: 28px;
-    }
-    #contenido{
-        position:fixed;
-    padding:0;
-    margin:0;
-
-    top:0;
-    left:0;
-
-    width: 100%;
-    height: 100%;
-    }
-    #señalarLogo{
-        width: 43%;
-        margin-left: 4%;
     }
     .menuBotones{
         --background: #E7E40D;
@@ -73,10 +54,10 @@ export default {
         text-transform:unset;
         font-size: 36px;
         width: 311px;
-        height: 73px;
+        height: 85px;
         --box-shadow: 1px 1px 9px black;
         letter-spacing: 0px;
-        margin-bottom: 12px; 
+        margin-bottom: 20px; 
     }
     .menuVolver {
         --background: #FF68E7;
