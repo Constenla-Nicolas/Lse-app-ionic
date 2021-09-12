@@ -14,6 +14,7 @@ const routes = [
     path: '/',
     redirect: '/bienvenido'
   },
+
   {
     path: '/bienvenido',
     component: Bienvenido,
@@ -52,5 +53,6 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
 })
+
 
 export default router
