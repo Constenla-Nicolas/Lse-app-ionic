@@ -3,9 +3,6 @@ import App from './App.vue'
 import router from './router';
 
 import { IonicVue } from '@ionic/vue';
-
-import 'vue-sidebar-menu/dist/vue-sidebar-menu.css'
-
 const app = createApp(App)
 
 /* Core CSS required for Ionic components to work properly */
