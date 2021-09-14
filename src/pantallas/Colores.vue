@@ -120,7 +120,7 @@
     display: block;
     text-align: justify;
     font-size: 25px;
-    margin: 3%;
+    padding: 3%;
   }
 
   @media screen and (max-height: 775px) {
