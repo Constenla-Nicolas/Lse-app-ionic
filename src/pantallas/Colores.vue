@@ -69,22 +69,21 @@
       color: #E7E40D;
       text-transform:unset;
       text-align: center;
-      padding: auto;
       font-size: 40px;
-      width: 246px;
-      height: 70px;
-      letter-spacing: 0px;
-      margin-bottom:20px; 
+      width: auto;
+      height: auto;
+      margin-bottom: auto; 
+      margin-left: 20%;
+      margin-right: 20%;
   }
   #significado{
       background-color: #E7E40D;
-      width: 309px;
-      height: 187px;
+      width: auto;
+      height: auto;
       border-radius: 25px;
       display: block;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
+      margin-left: 8%;
+      margin-right: 8%;
   }
   #nombreColor{
       color: #553071;
@@ -99,8 +98,10 @@
       color: #553071;
       display: block;
       text-align: justify;
+      font-size: 25px;
       line-height: 30px;
-      margin-left:30px;
-      margin-right:30px;
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-bottom: 10%;
   }
 </style>
