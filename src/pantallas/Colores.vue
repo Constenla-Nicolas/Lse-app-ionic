@@ -8,7 +8,6 @@
             <div id="significado">
               <ion-p id="nombreColor">AMARILLO</ion-p>
               <ion-p id="definicion">Color como el del oro, la banana, el sol, la yema de huevo. Es el tercer color del espectro solar.</ion-p>
-              
             </div>
             <ion-button id="volver" class="menuVolver" router-link="/eleccionQueAprender">VOLVER</ion-button>
           </ion-slide>
@@ -18,6 +17,7 @@
             <div id="significado">
               <ion-p id="nombreColor">AMARILLO</ion-p>
               <ion-p id="definicion">Color como el del oro, la banana, el sol, la yema de huevo. Es el tercer color del espectro solar.</ion-p>
+           <ion-button id="volver" class="menuVolver" router-link="/eleccionQueAprender">VOLVER</ion-button>
             </div>
           </ion-slide>
           
