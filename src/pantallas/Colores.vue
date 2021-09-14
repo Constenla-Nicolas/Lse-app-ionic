@@ -3,7 +3,7 @@
     <ion-content>
       <ion-slides pager="true" :options="slideOpts">
         <ion-slide>
-            <img id="imagen" src="../imagenes/logo_icono.png" style="margin-bottom:60px;">
+            <img id="imagen" src="../imagenes/colores/amarillo.gif">
             <ion-p id="significa">SIGNIFICA</ion-p>   
             <div id="significado">
               <ion-p id="nombreColor">AMARILLO</ion-p>
@@ -13,7 +13,7 @@
             <ion-button id="volver" class="menuVolver" router-link="/eleccionQueAprender">VOLVER</ion-button>
           </ion-slide>
           <ion-slide>
-            <img id="imagen" src="../imagenes/logo_icono.png" style="margin-bottom:60px;">
+            <img id="imagen" src="../imagenes/colores/gris.gif">
             <ion-p id="significa">SIGNIFICA</ion-p>    
             <div id="significado">
               <ion-p id="nombreColor">AMARILLO</ion-p>
@@ -54,11 +54,13 @@
     height: 100%;
   }
   #imagen{
-    border: yellow;
+    border:"20%";
+    border:solid;
+    border-color:#E7E40D;
     width: auto;
     height: auto;
-    padding: 20%;
-    text-align: center;
+    margin: 10%;
+
   }
   
   #significa{
