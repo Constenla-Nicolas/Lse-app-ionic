@@ -3,8 +3,8 @@
     <ion-content>
       <ion-slides pager="true" :options="slideOpts">
         <ion-slide>
-            <img id="imagen" src="../imagenes/logo_icono.png">
-            <ion-p id="significa">SIGNIFICA</ion-p>    
+            <img id="imagen" src="../imagenes/logo_icono.png" style="margin-bottom:60px;">
+            <ion-p id="significa">SIGNIFICA</ion-p>   
             <div id="significado">
               <ion-p id="nombreColor">AMARILLO</ion-p>
               <ion-p id="definicion">Color como el del oro, la banana, el sol, la yema de huevo. Es el tercer color del espectro solar.</ion-p>
@@ -13,7 +13,7 @@
             <ion-button id="volver" class="menuVolver" router-link="/eleccionQueAprender">VOLVER</ion-button>
           </ion-slide>
           <ion-slide>
-            <img id="imagen" src="../imagenes/logo_icono.png">
+            <img id="imagen" src="../imagenes/logo_icono.png" style="margin-bottom:60px;">
             <ion-p id="significa">SIGNIFICA</ion-p>    
             <div id="significado">
               <ion-p id="nombreColor">AMARILLO</ion-p>
@@ -64,6 +64,7 @@
     margin-top: 12%;
     margin-bottom: 12px;
   }
+  
   #significa{
     color: #E7E40D;
     text-transform:unset;
