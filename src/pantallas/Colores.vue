@@ -22,7 +22,7 @@
           </ion-slide>
 
           <ion-slide>
-            <img id="imagen" src="../imagenes/logo_icono.png">
+            <img id="imagen" src="../imagenes/colores/plateado.gif">
             <ion-p id="significa">Significa</ion-p>    
             <div id="significado">
               <ion-p id="nombreColor">Plateado</ion-p>
@@ -31,11 +31,11 @@
           </ion-slide>
 
           <ion-slide>
-            <img id="imagen" src="../imagenes/logo_icono.png">
+            <img id="imagen" src="../imagenes/colores/rojo.gif">
             <ion-p id="significa">Significa</ion-p>    
             <div id="significado">
-              <ion-p id="nombreColor">Plateado</ion-p>
-              <ion-p id="definicion">Que es gris claro brillante, como la plata, o que tiene un brillo parecido al de la plata.</ion-p>
+              <ion-p id="nombreColor">Rojo</ion-p>
+              <ion-p id="definicion"></ion-p>
             </div>
           </ion-slide>
           
