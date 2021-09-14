@@ -52,7 +52,7 @@
   ion-slide{
     display: block;
     width: 500px;
-    height: 2000px;
+    height: 800px;
   }
   #imagen{
       border: yellow;
@@ -68,7 +68,9 @@
   #significa{
       color: #E7E40D;
       text-transform:unset;
-      font-size: 36px;
+      text-align: center;
+      padding: auto;
+      font-size: 40px;
       width: 246px;
       height: 70px;
       letter-spacing: 0px;
@@ -78,6 +80,7 @@
       background-color: #E7E40D;
       width: 309px;
       height: 187px;
+      border-radius: 25px;
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -85,6 +88,7 @@
   }
   #nombreColor{
       color: #553071;
+      font-size: 40px;
       display: block;
       margin-left: auto;
       margin-right: auto;
