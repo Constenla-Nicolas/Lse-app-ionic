@@ -8,7 +8,6 @@
             <div id="significado">
               <ion-p id="nombreColor">Amarillo</ion-p>
               <ion-p id="definicion">Color como el del oro, la banana, el sol, la yema de huevo. Es el tercer color del espectro solar.</ion-p>
-              
             </div>
           </ion-slide>
 
@@ -25,7 +24,7 @@
             <img id="imagen" src="../imagenes/colores/rosa.gif">
             <ion-p id="significa">SIGNIFICA</ion-p>    
             <div id="significado">
-              <ion-p id="nombreColor">Verde</ion-p>
+              <ion-p id="nombreColor">Rosa</ion-p>
               <ion-p id="definicion">Este color que se forma con rojo y blanco, los chanchos y algunas flores tienen este color</ion-p>
             </div>
           </ion-slide>
@@ -37,25 +36,16 @@
               <ion-p id="nombreColor">Gris</ion-p>
               <ion-p id="definicion">Color como el del acero, el cemento o la piel de los elefantes.</ion-p>
             </div>
-          </ion-slide>
+          </ion-slide> 
 
           <ion-slide>
-            <img id="imagen" src="../imagenes/colores/plateado.gif">
-            <ion-p id="significa">SIGNIFICA</ion-p>    
+            <img id="imagen" src="../imagenes/colores/gris.gif">
+            <ion-p id="significa">Significa</ion-p>    
             <div id="significado">
-              <ion-p id="nombreColor">Plateado</ion-p>
-              <ion-p id="definicion">Que es gris claro brillante, como la plata, o que tiene un brillo parecido al de la plata.</ion-p>
+              <ion-p id="nombreColor">Gris</ion-p>
+              <ion-p id="definicion">Color como el del acero, el cemento o la piel de los elefantes.</ion-p>
             </div>
-          </ion-slide>
-
-          <ion-slide>
-            <img id="imagen" src="../imagenes/colores/rojo.gif">
-            <ion-p id="significa">SIGNIFICA</ion-p>    
-            <div id="significado">
-              <ion-p id="nombreColor">Rojo</ion-p>
-              <ion-p id="definicion"></ion-p>
-            </div>
-          </ion-slide>
+          </ion-slide> 
           
         </ion-slides>
         <ion-button id="volver" class="menuVolver" router-link="/eleccionQueAprender">VOLVER</ion-button>
@@ -98,7 +88,8 @@
     border:"20%";
     border:solid;
     border-color:#E7E40D;
-    height: 60%;
+    width: 20%;
+    height: 10%;
     margin: 10%;
   }
   #significa{
@@ -141,23 +132,23 @@
   }
   #volver{
     --background: #734299;
-        --border-color: black;
-        --border-radius: 50px;
-        --border-style: solid;
-        --border-width: 4px;
-        --color: #E7E40D;
-        text-transform:unset;
-        font-size: 36px;
-        width: auto;
-        height: auto;
-        --box-shadow: 3px 4px 10px black;
-        letter-spacing: 0px;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #E7E40D;
-        display: block;
-        margin-left: 20%;
-        margin-right: 20%;
-        text-align: center;
+    --border-color: black;
+    --border-radius: 50px;
+    --border-style: solid;
+    --border-width: 4px;
+    --color: #E7E40D;
+    text-transform:unset;
+    font-size: 36px;
+    width: auto;
+    height: auto;
+    --box-shadow: 3px 4px 10px black;
+    letter-spacing: 0px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #E7E40D;
+    display: block;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
   }
 
   @media screen and (max-height: 775px) {
