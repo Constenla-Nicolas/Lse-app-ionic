@@ -4,7 +4,7 @@
       <ion-slides pager="true" :options="slideOpts">
         <ion-slide>
             <img id="imagen" src="../imagenes/colores/amarillo.gif">
-            <ion-p id="significa">SIGNIFICA</ion-p>   
+            <ion-p id="significa">Significa</ion-p>   
             <div id="significado">
               <ion-p id="nombreColor">Amarillo</ion-p>
               <ion-p id="definicion">Color como el del oro, la banana, el sol, la yema de huevo. Es el tercer color del espectro solar.</ion-p>
@@ -14,7 +14,7 @@
 
           <ion-slide>
             <img id="imagen" src="../imagenes/colores/gris.gif">
-            <ion-p id="significa">SIGNIFICA</ion-p>    
+            <ion-p id="significa">Significa</ion-p>    
             <div id="significado">
               <ion-p id="nombreColor">Gris</ion-p>
               <ion-p id="definicion">Color como el del acero, el cemento o la piel de los elefantes.</ion-p>
@@ -40,7 +40,7 @@
           </ion-slide>
           
         </ion-slides>
-        <ion-button id="volver" class="menuVolver" router-link="/eleccionQueAprender" style="margin-left: auto; margin-right: auto;">VOLVER</ion-button>
+        <ion-button id="volver" class="menuVolver" router-link="/eleccionQueAprender">VOLVER</ion-button>
     </ion-content>
   </ion-page>
 </template>
@@ -84,7 +84,6 @@
     height: 70%;
     margin: 10%;
   }
-  
   #significa{
     color: #E7E40D;
     text-transform: uppercase;
@@ -103,7 +102,8 @@
     display: block;
     margin-left: 8%;
     margin-right: 8%;
-    margin-top: 10%; 
+    margin-top: 6%;
+    margin-bottom: 6%; 
   }
   #nombreColor{
     color: #553071;
@@ -121,6 +121,26 @@
     text-align: justify;
     font-size: 25px;
     padding: 3%;
+  }
+  #volver{
+    --background: #734299;
+        --border-color: black;
+        --border-radius: 50px;
+        --border-style: solid;
+        --border-width: 4px;
+        --color: #E7E40D;
+        text-transform:unset;
+        font-size: 36px;
+        width: auto;
+        height: auto;
+        --box-shadow: 3px 4px 10px black;
+        letter-spacing: 0px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #E7E40D;
+        display: block;
+        margin-left: 20%;
+        margin-right: 20%;
+        text-align: center;
   }
 
   @media screen and (max-height: 775px) {
