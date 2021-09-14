@@ -30,21 +30,20 @@
   import {IonButton, IonPage, IonContent, IonSlides, IonSlide} from "@ionic/vue";
 
   export default {
-      components:{
-          IonButton,
-          IonPage,
-          IonContent,
-          IonSlide,
-          IonSlides,        
-      },
-      setup() {
-    // Optional parameters to pass to the swiper instance. See http://idangero.us/swiper/api/ for valid options.
-    const slideOpts = {
+    components:{
+      IonButton,
+      IonPage,
+      IonContent,
+      IonSlide,
+      IonSlides,        
+    },
+    setup() {
+      const slideOpts = {
       initialSlide: 0,
       speed: 400
-    };
+      };
     return { slideOpts }
-  }
+    }
   }
 </script>
 
@@ -55,53 +54,53 @@
     height: 800px;
   }
   #imagen{
-      border: yellow;
-      width: 248px;
-      height: 257px;
-      padding: 20px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-      margin-top: 12%;
-      margin-bottom: 12px;
+    border: yellow;
+    width: 248px;
+    height: 257px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 12%;
+    margin-bottom: 12px;
   }
   #significa{
-      color: #E7E40D;
-      text-transform:unset;
-      text-align: center;
-      font-size: 40px;
-      width: auto;
-      height: auto;
-      margin-bottom: auto; 
-      margin-left: 20%;
-      margin-right: 20%;
+    color: #E7E40D;
+    text-transform:unset;
+    text-align: center;
+    font-size: 40px;
+    width: auto;
+    height: auto;
+    margin-left: 20%;
+    margin-right: 20%;
   }
   #significado{
-      background-color: #E7E40D;
-      width: auto;
-      height: auto;
-      border-radius: 25px;
-      display: block;
-      margin-left: 8%;
-      margin-right: 8%;
+    background-color: #E7E40D;
+    width: auto;
+    height: auto;
+    border-radius: 25px;
+    display: block;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 10%; 
   }
   #nombreColor{
-      color: #553071;
-      font-size: 40px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-      margin-bottom: 12px;
+    color: #553071;
+    font-size: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 12px;
   }
   #definicion{
-      color: #553071;
-      display: block;
-      text-align: justify;
-      font-size: 25px;
-      line-height: 30px;
-      margin-left: 30px;
-      margin-right: 30px;
-      margin-bottom: 10%;
+    color: #553071;
+    display: block;
+    text-align: justify;
+    font-size: 25px;
+    line-height: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 10%;
   }
 </style>
