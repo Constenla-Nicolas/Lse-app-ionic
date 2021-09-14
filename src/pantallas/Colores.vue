@@ -13,6 +13,24 @@
           </ion-slide>
 
           <ion-slide>
+            <img id="imagen" src="../imagenes/colores/verde.gif">
+            <ion-p id="significa">SIGNIFICA</ion-p>    
+            <div id="significado">
+              <ion-p id="nombreColor">Verde</ion-p>
+              <ion-p id="definicion">Color secundario, como el pasto, la lechuga y las hojas de los arboles</ion-p>
+            </div>
+          </ion-slide>
+
+          <ion-slide>
+            <img id="imagen" src="../imagenes/colores/rosa.gif">
+            <ion-p id="significa">SIGNIFICA</ion-p>    
+            <div id="significado">
+              <ion-p id="nombreColor">Verde</ion-p>
+              <ion-p id="definicion">Este color que se forma con rojo y blanco, los chanchos y algunas flores tienen este color</ion-p>
+            </div>
+          </ion-slide>
+
+          <ion-slide>
             <img id="imagen" src="../imagenes/colores/gris.gif">
             <ion-p id="significa">SIGNIFICA</ion-p>    
             <div id="significado">
@@ -80,8 +98,7 @@
     border:"20%";
     border:solid;
     border-color:#E7E40D;
-    width: 70%;
-    height: 70%;
+    height: 60%;
     margin: 10%;
   }
   
@@ -119,8 +136,8 @@
     color: #553071;
     display: block;
     text-align: justify;
-    font-size: 25px;
-    padding: 3%;
+    font-size: 20px;
+    padding: 5%;
   }
 
   @media screen and (max-height: 775px) {
