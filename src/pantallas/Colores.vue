@@ -50,19 +50,15 @@
 <style scoped>
   ion-slide{
     display: block;
-    width: 500px;
-    height: 800px;
+    width: 100%;
+    height: 100%;
   }
   #imagen{
     border: yellow;
-    width: 248px;
-    height: 257px;
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    width: auto;
+    height: auto;
+    padding: 20%;
     text-align: center;
-    margin-top: 12%;
-    margin-bottom: 12px;
   }
   
   #significa{
