@@ -13,9 +13,9 @@
             <div id="espacioSalvador">
             </div>
 
-            <div class="contenido" >
-            <ion-button @click= "cambiarImagen(contenedorImagen)" class="botonLetra" id="buttonA">A</ion-button>
-            <ion-button class="botonLetra" id="buttonB">B</ion-button>
+            <div class="contenido" id = "arca">
+            <ion-button  v-on:click= "di('A.png')" class="botonLetra" id="buttonA">A</ion-button>
+            <ion-button class="botonLetra" id="buttonB" rel="imagenes/letras/A.png">B</ion-button>
             <ion-button class="botonLetra" id="buttonC">C</ion-button>
             <ion-button class="botonLetra" id="buttonD">D</ion-button>
             <ion-button class="botonLetra" id="buttonE">E</ion-button>
@@ -55,9 +55,11 @@
         </ion-content>  
     </ion-page>
 </template>
-
-<script>
+ 
+<script >
 import { IonButton, IonPage, IonContent} from "@ionic/vue";
+import { createApp} from 'vue'
+ 
 export default {
     components: {
         IonButton,
@@ -69,7 +71,24 @@ export default {
             document.getElementById(img).src = "../imagenes/letras/B.jpg";
                            }
     }
+
+    
 }
+ const app = createApp({
+  data() {
+    return { count: 4 }
+  },
+  el: '#arca',
+  methods: {
+    di: function(msg) {
+        document.getElementById().src="imagenes/letras/"+msg;
+      
+    }
+  }
+})
+ 
+ console.log(app)
+
 
 </script>
 
@@ -85,6 +104,7 @@ export default {
         --border-color: black;
         --border-radius: 50px;
         --border-style: solid;
+        
         --border-width: 4px;
         --color: #E7E40D;
         text-transform:unset;
