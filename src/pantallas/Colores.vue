@@ -3,21 +3,40 @@
     <ion-content>
       <ion-slides pager="true" :options="slideOpts">
         <ion-slide>
-            <img id="imagen" src="../imagenes/logo_icono.png" style="margin-bottom:60px;">
-            <ion-p id="significa">SIGNIFICA</ion-p>   
+            <img id="imagen" src="../imagenes/logo_icono.png">
+            <ion-p id="significa">Significa</ion-p>   
             <div id="significado">
-              <ion-p id="nombreColor">AMARILLO</ion-p>
+              <ion-p id="nombreColor">Amarillo</ion-p>
               <ion-p id="definicion">Color como el del oro, la banana, el sol, la yema de huevo. Es el tercer color del espectro solar.</ion-p>
               
             </div>
             <ion-button id="volver" class="menuVolver" router-link="/eleccionQueAprender">VOLVER</ion-button>
           </ion-slide>
+
           <ion-slide>
             <img id="imagen" src="../imagenes/logo_icono.png" style="margin-bottom:60px;">
-            <ion-p id="significa">SIGNIFICA</ion-p>    
+            <ion-p id="significa">Significa</ion-p>    
             <div id="significado">
-              <ion-p id="nombreColor">AMARILLO</ion-p>
-              <ion-p id="definicion">Color como el del oro, la banana, el sol, la yema de huevo. Es el tercer color del espectro solar.</ion-p>
+              <ion-p id="nombreColor">Gris</ion-p>
+              <ion-p id="definicion">Color como el del acero, el cemento o la piel de los elefantes.</ion-p>
+            </div>
+          </ion-slide>
+
+          <ion-slide>
+            <img id="imagen" src="../imagenes/logo_icono.png" style="margin-bottom:60px;">
+            <ion-p id="significa">Significa</ion-p>    
+            <div id="significado">
+              <ion-p id="nombreColor">Plateado</ion-p>
+              <ion-p id="definicion">Que es gris claro brillante, como la plata, o que tiene un brillo parecido al de la plata.</ion-p>
+            </div>
+          </ion-slide>
+
+          <ion-slide>
+            <img id="imagen" src="../imagenes/logo_icono.png" style="margin-bottom:60px;">
+            <ion-p id="significa">Significa</ion-p>    
+            <div id="significado">
+              <ion-p id="nombreColor">Plateado</ion-p>
+              <ion-p id="definicion">Que es gris claro brillante, como la plata, o que tiene un brillo parecido al de la plata.</ion-p>
             </div>
           </ion-slide>
           
@@ -53,17 +72,21 @@
     width: 100%;
     height: 100%;
   }
+  ion-slides{
+    --bullet-background: #55307100;
+    --bullet-background-active: #55307100;
+  }
   #imagen{
     border: yellow;
     width: auto;
     height: auto;
-    padding: 20%;
-    text-align: center;
+    margin: 20%;
+    max-height: 400px;
   }
   
   #significa{
     color: #E7E40D;
-    text-transform:unset;
+    text-transform: uppercase;
     text-align: center;
     font-size: 40px;
     width: auto;
@@ -84,20 +107,25 @@
   #nombreColor{
     color: #553071;
     font-size: 40px;
+    text-transform: uppercase;
     display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-bottom: 12px;
+    margin-bottom: 2%;
   }
   #definicion{
     color: #553071;
     display: block;
     text-align: justify;
     font-size: 25px;
-    line-height: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 10%;
+    margin: 3%;
+  }
+
+  @media screen and (max-height: 775px) {
+    img{
+      width: 70%;
+      margin: 0%;
+    }
   }
 </style>
