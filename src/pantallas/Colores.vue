@@ -94,8 +94,9 @@
   #definicion{
       color: #553071;
       display: block;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
+      text-align: justify;
+      line-height: 30px;
+      margin-left:30px;
+      margin-right:30px;
   }
 </style>
