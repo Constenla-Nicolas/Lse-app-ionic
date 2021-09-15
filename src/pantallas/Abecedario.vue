@@ -4,7 +4,7 @@
             <div id="contenedorImagenes">
 
                     <div id="cuadroAmarillo">
-                         <img id="señalarLogo" src="../imagenes/senialar_texto.png">
+                         <img id="contenedorImagen" src="../imagenes/letras/A.jpg">
                     </div>
 
             </div>
@@ -67,9 +67,9 @@ export default {
         IonContent,
     },
     methods: {
-        cambiarImagen() {
-    alert(window.location.pathname);
-}
+        cambiarImagen(img) {
+            document.getElementById(img).src = "../imagenes/letras/B.jpg";
+                           }
     }
 
     
