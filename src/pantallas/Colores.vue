@@ -53,7 +53,7 @@
             <ion-p id="significa">SIGNIFICA</ion-p>    
             <div id="significado">
               <ion-p id="nombreColor">Rojo</ion-p>
-              <ion-p id="definicion"></ion-p>
+              <ion-p id="definicion">Color primario y el primer color del espectro solar. Los tomates, la sangre y las amapolas llevan este color</ion-p>
             </div>
           </ion-slide>
           
