@@ -57,15 +57,6 @@ export default {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    border-top:5px ;
-    margin-top: 10%;
-    border-top:2px ;
-    border-bottom: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    padding: 30px 0px 0px 40px;
-    border-style:solid;
-    border-top-color: #553071 ;
 }
 
 .upperPart{

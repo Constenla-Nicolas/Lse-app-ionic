@@ -88,8 +88,8 @@
     border:"20%";
     border:solid;
     border-color:#E7E40D;
-    width: 20%;
-    height: 10%;
+    width: 60%;
+    height: 50%;
     margin: 10%;
   }
   #significa{
