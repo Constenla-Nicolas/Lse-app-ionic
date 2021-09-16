@@ -112,6 +112,8 @@
           
         </ion-slides>
         <ion-button id="volver" class="menuVolver" router-link="/eleccionQueAprender">VOLVER</ion-button>
+        <ion-button id="testearNotificaciones" class="menuVolver" router-link="/Notificaciones">TestearNotis</ion-button>
+    
     </ion-content>
   </ion-page>
 </template>
