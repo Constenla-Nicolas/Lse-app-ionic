@@ -7,6 +7,7 @@ import Numeros from "../pantallas/Numeros.vue"
 import Colores from "../pantallas/Colores.vue"
 import Acciones from "../pantallas/Acciones.vue"
 import Conceptos from "../pantallas/Conceptos.vue"
+import Testeo from "../pantallas/testeo.vue"
 
 
 const routes = [
@@ -14,7 +15,10 @@ const routes = [
     path: '/',
     redirect: '/bienvenido'
   },
-
+  {
+    path: '/testeo',
+    component: Testeo,
+  },
   {
     path: '/bienvenido',
     component: Bienvenido,

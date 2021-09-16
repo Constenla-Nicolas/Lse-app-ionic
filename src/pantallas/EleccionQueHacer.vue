@@ -4,6 +4,7 @@
             <ion-header >
                 <ion-toolbar>
                 <img id="señalarLogo" src="../imagenes/senialar_texto.png">
+                <img id="hamburger" src="../imagenes/Hamburger.png">
                 </ion-toolbar>
             </ion-header>
             <div class="upperPart">
@@ -46,6 +47,12 @@ export default {
     #señalarLogo{
         width: 43%;
         margin-left: 4%;
+    }
+    #hamburger{
+        width: 12%;
+        position: fixed;
+        margin-left: 38%;
+        margin-top: -1%;
     }
 
     ion-toolbar{

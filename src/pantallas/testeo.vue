@@ -1,12 +1,40 @@
-
 <template>
+    
+<ion-menu side="start" menuId="first" id="menuTransp">
 
-    <ion-page>
+</ion-menu>
+
+<ion-menu side="end" type="push" id="menuVisible">
+
+  <ion-header>
+    <ion-toolbar id="ajustesToolbar">
+      <ion-title>AJUSTES</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <ion-item>Ajustes</ion-item>
+      <ion-item>Mi cuenta</ion-item>
+      <ion-item>Usuarios</ion-item>
+      <ion-item>Vídeos</ion-item>
+      <ion-item>Publicaciones</ion-item>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+
+<ion-router-outlet main></ion-router-outlet>
+<ion-page>
         <ion-content>
             <ion-header>
                 <ion-toolbar>
                 <img id="señalarLogo" src="../imagenes/senialar_texto.png">
-                <img id="hamburger" src="../imagenes/Hamburger.png">
+                <div id="hamburger" @click="openEnd()" >
+                    <img  src="../imagenes/Hamburger.png">
+                </div>
+                
                 </ion-toolbar>
             </ion-header>
             <div class="menuAccesos">
@@ -19,26 +47,65 @@
             </div>
         </ion-content>
     </ion-page>
-
 </template>
-
+<style>
+#ajustesToolbar{
+    --background: #AA60E2;
+}
+.my-custom-menu {
+  --width: 500px;
+}
+#menuTransp{
+    z-index: 9;
+}
+#menuVisible{
+    z-index: 10;
+}
+</style>
 
 <script>
+import { 
+  IonContent, 
+  IonHeader, 
+  IonItem, 
+  IonList, 
+  IonMenu, 
+  IonRouterOutlet,
+  IonTitle, 
+  IonToolbar,
 
-import { IonButton, IonPage, IonContent, IonHeader} from "@ionic/vue";
-export default {
-     
-  
-    components: {
-        IonButton,
-        IonPage,
-        IonContent,
-        IonHeader,
+  menuController
+} from '@ionic/vue';
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  components: {
+
+    IonContent, 
+    IonHeader, 
+    IonItem, 
+    IonList, 
+    IonMenu, 
+    IonRouterOutlet,
+    IonTitle, 
+    IonToolbar
+  },
+  methods: {
+    openFirst() {
+      menuController.enable(true, 'first');
+      menuController.open('first');
+    },
+    openEnd() {
+      menuController.open('end');
+    },
+    openCustom() {
+      menuController.enable(true, 'custom');
+      menuController.open('custom');
     }
-}
- 
-
+  }
+});
 </script>
+
 <style scoped> /* estilo */
     #señalarLogo{
         width: 43%;
@@ -46,9 +113,10 @@ export default {
     }
     #hamburger{
         width: 12%;
+        margin-top: -10%;
+        margin-left: 85%;
         position: fixed;
-        margin-left: 38%;
-        margin-top: -1%;
+        background-color: red;
     }
 
     ion-toolbar{

@@ -14,7 +14,7 @@
             </div>
 
             <div class="contenido" id = "arca">
-            <ion-button  v-on:click= "di('A.png')" class="botonLetra" id="buttonA">A</ion-button>
+            <ion-button  v-on:click= "refreshImage('contenedorImagen','../imagenes/letras/B.jpg')" class="botonLetra" id="buttonA">A</ion-button>
             <ion-button class="botonLetra" id="buttonB" rel="imagenes/letras/A.png">B</ion-button>
             <ion-button class="botonLetra" id="buttonC">C</ion-button>
             <ion-button class="botonLetra" id="buttonD">D</ion-button>
@@ -59,6 +59,7 @@
 <script >
 import { IonButton, IonPage, IonContent} from "@ionic/vue";
 import { createApp} from 'vue'
+import image from "../imagenes/letras/A.jpg"
  
 export default {
     components: {
@@ -66,12 +67,23 @@ export default {
         IonPage,
         IonContent,
     },
+    data: function () {
+        return {
+            image: image
+        }
+    },
     methods: {
-        cambiarImagen(img) {
-            document.getElementById(img).src = "../imagenes/letras/B.jpg";
-                           }
+        refreshImage(imgElement, imgURL){    
+            // create a new timestamp 
+            var timestamp = new Date().getTime();  
+  
+            var el = document.getElementById(imgElement);  
+  
+            var queryString = "?t=" + timestamp;    
+   
+            el.src = imgURL + queryString;    
+        }    
     }
-
     
 }
  const app = createApp({
