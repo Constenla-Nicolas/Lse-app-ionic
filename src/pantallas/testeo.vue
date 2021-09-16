@@ -14,7 +14,7 @@
 
   <ion-content>
     <ion-list>
-      <ion-item>Ajustes</ion-item>
+      <ion-item router-link="./Acciones.vue">Ajustes</ion-item>
       <ion-item>Mi cuenta</ion-item>
       <ion-item>Usuarios</ion-item>
       <ion-item>Vídeos</ion-item>
@@ -73,6 +73,7 @@ import {
   IonRouterOutlet,
   IonTitle, 
   IonToolbar,
+  IonButton,
 
   menuController
 } from '@ionic/vue';
@@ -88,7 +89,8 @@ export default defineComponent({
     IonMenu, 
     IonRouterOutlet,
     IonTitle, 
-    IonToolbar
+    IonToolbar,
+    IonButton
   },
   methods: {
     openFirst() {

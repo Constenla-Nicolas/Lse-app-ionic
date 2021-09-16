@@ -12,17 +12,89 @@
           </ion-slide>
 
           <ion-slide>
-            <img id="imagen" src="../imagenes/colores/verde.gif">
-            <ion-p id="significa">SIGNIFICA</ion-p>    
+            <img id="imagen" src="../imagenes/colores/azul.gif">
+            <ion-p id="significa">Significa</ion-p>    
             <div id="significado">
-              <ion-p id="nombreColor">Verde</ion-p>
-              <ion-p id="definicion">Color secundario, como el pasto, la lechuga y las hojas de los arboles</ion-p>
+              <ion-p id="nombreColor">Azul</ion-p>
+              <ion-p id="definicion">Color asociado con el agua y uno de los colores primarios</ion-p>
+            </div>
+          </ion-slide> 
+
+          <ion-slide>
+            <img id="imagen" src="../imagenes/colores/beige.gif">
+            <ion-p id="significa">Significa</ion-p>    
+            <div id="significado">
+              <ion-p id="nombreColor">Beige</ion-p>
+              <ion-p id="definicion">Color marrón o café muy claro, como el de la arena.</ion-p>
             </div>
           </ion-slide>
 
           <ion-slide>
+            <img id="imagen" src="../imagenes/colores/celeste.gif">
+            <ion-p id="significa">Significa</ion-p>    
+            <div id="significado">
+              <ion-p id="nombreColor">Celeste</ion-p>
+              <ion-p id="definicion">Color azul que es el más claro y más parecido al del cielo despejado.</ion-p>
+            </div>
+          </ion-slide> 
+
+          <ion-slide>
+            <img id="imagen" src="../imagenes/colores/gris.gif">
+            <ion-p id="significa">Significa</ion-p>    
+            <div id="significado">
+              <ion-p id="nombreColor">Gris</ion-p>
+              <ion-p id="definicion">Color como el del acero, el cemento o la piel de los elefantes.</ion-p>
+            </div>
+          </ion-slide> 
+
+          <ion-slide>
+            <img id="imagen" src="../imagenes/colores/marron.gif">
+            <ion-p id="significa">Significa</ion-p>    
+            <div id="significado">
+              <ion-p id="nombreColor">Marron</ion-p>
+              <ion-p id="definicion">Color como el del barro, el chocolate, el café o la cáscara de la castaña.</ion-p>
+            </div>
+          </ion-slide> 
+
+          <ion-slide>
+            <img id="imagen" src="../imagenes/colores/naranja.gif">
+            <ion-p id="significa">Significa</ion-p>    
+            <div id="significado">
+              <ion-p id="nombreColor">Naranja</ion-p>
+              <ion-p id="definicion">Color como la zanahoria o como la fruta naranja. Es el segundo color del espectro solar.</ion-p>
+            </div>
+          </ion-slide> 
+
+          <ion-slide>
+            <img id="imagen" src="../imagenes/colores/negro.gif">
+            <ion-p id="significa">Significa</ion-p>    
+            <div id="significado">
+              <ion-p id="nombreColor">Negro</ion-p>
+              <ion-p id="definicion">Color como el del carbón o la oscuridad total.</ion-p>
+            </div>
+          </ion-slide> 
+
+          <ion-slide>
+            <img id="imagen" src="../imagenes/colores/plateado.gif">
+            <ion-p id="significa">Significa</ion-p>    
+            <div id="significado">
+              <ion-p id="nombreColor">Plateado</ion-p>
+              <ion-p id="definicion">Que es gris claro brillante, como la plata, o que tiene un brillo parecido al de la plata.</ion-p>
+            </div>
+          </ion-slide> 
+
+          <ion-slide>
+            <img id="imagen" src="../imagenes/colores/rojo.gif">
+            <ion-p id="significa">Significa</ion-p>    
+            <div id="significado">
+              <ion-p id="nombreColor">Rojo</ion-p>
+              <ion-p id="definicion">Color como el de la sangre, los tomates maduros o las amapolas; es el primer color del espectro solar.</ion-p>
+            </div>
+          </ion-slide> 
+          
+          <ion-slide>
             <img id="imagen" src="../imagenes/colores/rosa.gif">
-            <ion-p id="significa">SIGNIFICA</ion-p>    
+            <ion-p id="significa">Significa</ion-p>    
             <div id="significado">
               <ion-p id="nombreColor">Rosa</ion-p>
               <ion-p id="definicion">Este color que se forma con rojo y blanco, los chanchos y algunas flores tienen este color</ion-p>
@@ -30,22 +102,13 @@
           </ion-slide>
 
           <ion-slide>
-            <img id="imagen" src="../imagenes/colores/gris.gif">
+            <img id="imagen" src="../imagenes/colores/verde.gif">
             <ion-p id="significa">Significa</ion-p>    
             <div id="significado">
-              <ion-p id="nombreColor">Gris</ion-p>
-              <ion-p id="definicion">Color como el del acero, el cemento o la piel de los elefantes.</ion-p>
+              <ion-p id="nombreColor">Verde</ion-p>
+              <ion-p id="definicion">Color secundario, como el pasto, la lechuga y las hojas de los arboles</ion-p>
             </div>
-          </ion-slide> 
-
-          <ion-slide>
-            <img id="imagen" src="../imagenes/colores/gris.gif">
-            <ion-p id="significa">Significa</ion-p>    
-            <div id="significado">
-              <ion-p id="nombreColor">Gris</ion-p>
-              <ion-p id="definicion">Color como el del acero, el cemento o la piel de los elefantes.</ion-p>
-            </div>
-          </ion-slide> 
+          </ion-slide>
           
         </ion-slides>
         <ion-button id="volver" class="menuVolver" router-link="/eleccionQueAprender">VOLVER</ion-button>
