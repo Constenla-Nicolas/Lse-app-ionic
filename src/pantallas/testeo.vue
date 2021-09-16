@@ -12,13 +12,13 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-content>
+  <ion-content id="bodyToolbar">
     <ion-list>
-      <ion-item router-link="./Acciones.vue">Ajustes</ion-item>
-      <ion-item>Mi cuenta</ion-item>
-      <ion-item>Usuarios</ion-item>
-      <ion-item>Vídeos</ion-item>
-      <ion-item>Publicaciones</ion-item>
+      <ion-item id="botonesLayout" router-link="/acciones">Ajustes</ion-item>
+      <ion-item id="botonesLayout">Mi cuenta</ion-item>
+      <ion-item id="botonesLayout">Usuarios</ion-item>
+      <ion-item id="botonesLayout">Vídeos</ion-item>
+      <ion-item id="botonesLayout">Publicaciones</ion-item>
     </ion-list>
   </ion-content>
 
@@ -48,18 +48,29 @@
         </ion-content>
     </ion-page>
 </template>
+
 <style>
 #ajustesToolbar{
     --background: #AA60E2;
 }
+#bodyToolbar{
+    --background: #AA60E2;
+}
 .my-custom-menu {
   --width: 500px;
+}
+#botonesLayout{
+  --background: #AA60E2;
+}
+#botonesLayout:active{
+  background-color: #553071;
 }
 #menuTransp{
     z-index: 9;
 }
 #menuVisible{
     z-index: 10;
+    --background: #AA60E2;
 }
 </style>
 
@@ -121,9 +132,13 @@ export default defineComponent({
         background-color: red;
     }
 
+
+
     ion-toolbar{
         box-shadow: 0px -25px 50px black;
     }
+
+
     .menuAccesos{
         display: block;
         margin-left: auto;
