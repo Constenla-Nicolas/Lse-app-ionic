@@ -14,7 +14,7 @@
 
   <ion-content id="bodyToolbar">
     <ion-list>
-      <ion-item id="botonesLayout" router-link="/acciones">Ajustes</ion-item>
+      <ion-item id="botonesLayout" router-link="/acciones" style="">Ajustes</ion-item>
       <ion-item id="botonesLayout">Mi cuenta</ion-item>
       <ion-item id="botonesLayout">Usuarios</ion-item>
       <ion-item id="botonesLayout">Vídeos</ion-item>
@@ -26,7 +26,7 @@
 
 
 <ion-router-outlet main></ion-router-outlet>
-<ion-page>
+    <ion-page>
         <ion-content>
             <ion-header>
                 <ion-toolbar>
@@ -46,7 +46,7 @@
                 <ion-button id="volver" class="menuVolver" router-link="/eleccionQueHacer">VOLVER</ion-button>
             </div>
         </ion-content>
-    </ion-page>
+    </ion-page> 
 </template>
 
 <style>
@@ -62,7 +62,7 @@
 #botonesLayout{
   --background: #AA60E2;
 }
-#botonesLayout:active{
+ion-item:hover{
   background-color: #553071;
 }
 #menuTransp{
