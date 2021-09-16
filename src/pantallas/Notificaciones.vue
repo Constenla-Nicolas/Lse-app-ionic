@@ -15,8 +15,6 @@
                 TIPO
 
             </div>
-            <div id="espacioSalvador">
-            </div>
             <ion-button id="volver" class="menuVolver" router-link="/Colores">Volver al menu principal</ion-button> <!-- cambiar -->
         
             
@@ -99,10 +97,5 @@
               -1px  0px 0px black,
                0px -1px 0px black;
                
-}
-#espacioSalvador{
-      width: 100%;
-      height: 10%;
-      z-index: 7;
 }
 </style>
