@@ -7,13 +7,31 @@
             </div>
         </div>
         <div id="horario">
-            <br><br>
+            <br>
             HORARIO
+            <br>
+            <div id=checkbox>
+            <label><input type="checkbox" id="cbox1" value="primera_checkbox" style="margin-bottom: 5%"> Diarias</label><br>
+
+            <input type="checkbox" id="cbox2" value="segunda_checkbox" style="margin-bottom: 5%"> <label for="cbox2">Semanales</label><br>
+
+            <input type="checkbox" id="cbox3" value="tercera_checkbox" style="margin-bottom: 5%"> <label for="cbox3">Nunca</label><br>
+
+             </div>
+            
             </div>
             <div id="raya"></div>
             <div id="tipo">
-                TIPO
+            TIPO
+            <br> 
+            <div id=checkbox>
+            <label><input type="checkbox" id="cbox1" value="primera_checkbox" style="margin-bottom: 5% "> Actualizaciones</label><br>
 
+            <input type="checkbox" id="cbox2" value="segunda_checkbox" style="margin-bottom: 5%"> <label for="cbox2">Consejos</label><br>
+
+            <input type="checkbox" id="cbox3" value="tercera_checkbox" style="margin-bottom: 5%"> <label for="cbox3">Recordatorios</label>
+
+            </div>
             </div>
             <ion-button id="volver" class="menuVolver" router-link="/Colores">Volver al menu principal</ion-button> <!-- cambiar -->
         
@@ -51,15 +69,35 @@
       background-color: #734299;
 
 }
+#checkbox{
+    color:#E7E40D;
+}
 #horario{
+    margin-left: 4%;
+    margin-top: 6%;
     display: block;
     width: 100%;
     height: 40%;
+    color: #734299;
+    font-size: 25px;
+    text-shadow: 1px  0px 0px black,  
+               0px  1px 0px black,
+              -1px  0px 0px black,
+               0px -1px 0px black;
+
 }
 #tipo{
+    margin-left: 4%;
+    margin-top: 2%;
     display: block;
     width: 100%;
     height: 40%;
+    font-size: 25px;
+    color: #734299;
+    text-shadow: 1px  0px 0px black,  
+               0px  1px 0px black,
+              -1px  0px 0px black,
+               0px -1px 0px black;
 }
 #raya{
     display: block;
@@ -81,7 +119,6 @@
     --box-shadow: 3px 4px 10px black;
     letter-spacing: 0px;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #E7E40D;
     display: block;
     margin-left: 10%;
     margin-right: 10%;
