@@ -8,7 +8,7 @@ import Colores from "../pantallas/Colores.vue"
 import Acciones from "../pantallas/Acciones.vue"
 import Conceptos from "../pantallas/Conceptos.vue"
 import Testeo from "../pantallas/testeo.vue"
-
+import Notificaciones from "../pantallas/Notificaciones.vue"
 
 const routes = [
   {
@@ -18,6 +18,10 @@ const routes = [
   {
     path: '/testeo',
     component: Testeo,
+  },
+  {
+    path: '/notificaciones',
+    component: Notificaciones,
   },
   {
     path: '/bienvenido',
