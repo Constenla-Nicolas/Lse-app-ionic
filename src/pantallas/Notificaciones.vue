@@ -8,32 +8,41 @@
         </div>
         <div id="horario">
             <br>
-            HORARIO
-            <br>
+            <div class="titulo" style="margin-bottom: 2%;">
+                HORARIO
+            </div>
             <div id=checkbox>
-            <label><input type="checkbox" id="cbox1" value="primera_checkbox" style="margin-bottom: 5%"> Diarias</label><br>
-
-            <input type="checkbox" id="cbox2" value="segunda_checkbox" style="margin-bottom: 5%"> <label for="cbox2">Semanales</label><br>
-
-            <input type="checkbox" id="cbox3" value="tercera_checkbox" style="margin-bottom: 5%"> <label for="cbox3">Nunca</label><br>
+            <div>
+            <input type="radio" id="cbox1" name="r1" value="Diarias" style="margin-bottom: 5%; margin-left: 5px;">
+            <label for="Diarias"> Diarias</label>
+            </div>
+            <div>
+            <input type="radio" id="cbox2" name="r1" value="Semanales" style="margin-bottom: 5%; margin-left: 5px;">
+            <label for="Semanales"> Semanales</label>
+            </div>
+            <div>
+            <input type="radio" id="cbox3" name="r1" value="Nunca" style="margin-bottom: 5%;  margin-left: 5px;">
+            <label for="Nunca"> Nunca</label>
+            </div>
 
              </div>
             
             </div>
             <div id="raya"></div>
             <div id="tipo">
-            TIPO
-            <br> 
+            <div class="titulo" style="margin-bottom: 2%;">
+                TIPO
+            </div>
             <div id=checkbox>
-            <label><input type="checkbox" id="cbox1" value="primera_checkbox" style="margin-bottom: 5% "> Actualizaciones</label><br>
+            <label><input type="checkbox" id="cbox1" value="primera_checkbox" style="margin-bottom: 5%; margin-left: 5px;"> Actualizaciones</label><br>
 
-            <input type="checkbox" id="cbox2" value="segunda_checkbox" style="margin-bottom: 5%"> <label for="cbox2">Consejos</label><br>
+            <input type="checkbox" id="cbox2" value="segunda_checkbox" style="margin-bottom: 5%; margin-left: 5px;"> <label for="cbox2">Consejos</label><br>
 
-            <input type="checkbox" id="cbox3" value="tercera_checkbox" style="margin-bottom: 5%"> <label for="cbox3">Recordatorios</label>
+            <input type="checkbox" id="cbox3" value="tercera_checkbox" style="margin-bottom: 5%; margin-left: 5px;"> <label for="cbox3">Recordatorios</label>
 
             </div>
             </div>
-            <ion-button id="volver" class="menuVolver" router-link="/Colores">Volver al menu principal</ion-button> <!-- cambiar -->
+            <ion-button id="volver" class="menuVolver" router-link="/Colores">VOLVER AL MENU <br> PRINCIPAL</ion-button> <!-- cambiar -->
         
             
         
@@ -61,16 +70,30 @@
       margin: 0%;
     }
   }
+  input[type=checkbox] {
+    transform: scale(2.5) translateY(-2px);
+}
+input[type=radio] {
+        transform: scale(2.5) translateY(-2px);
+}
 #barraSuperior{
       position:fixed;
       width: 100%;
       height: 8%;
       display: block;
-      background-color: #734299;
+      background-color: #AA60E2;
 
 }
 #checkbox{
     color:#E7E40D;
+}
+.titulo{
+  color: #AA60E2;
+  font-size: 36px;
+      text-shadow: 1px 3px 7px black;
+    -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: #AA60E2;
+margin-left: -1%;
 }
 #horario{
     margin-left: 4%;
@@ -79,60 +102,52 @@
     width: 100%;
     height: 40%;
     color: #734299;
-    font-size: 25px;
-    text-shadow: 1px  0px 0px black,  
-               0px  1px 0px black,
-              -1px  0px 0px black,
-               0px -1px 0px black;
-
+    font-size: 36px;
 }
 #tipo{
     margin-left: 4%;
     margin-top: 2%;
+    margin-bottom: -5%;
     display: block;
     width: 100%;
     height: 40%;
-    font-size: 25px;
-    color: #734299;
-    text-shadow: 1px  0px 0px black,  
-               0px  1px 0px black,
-              -1px  0px 0px black,
-               0px -1px 0px black;
+    color: #AA60E2;
+    font-size: 36px;
 }
 #raya{
     display: block;
-    background-color: #734299;
-    height: 1%;
+    background-color: #AA60E2;
+    height: 3px;
     width: 100%;
 }
 #volver{
-    --background: #734299;
+    --background: #AA60E2;
     --border-color: black;
     --border-radius: 50px;
     --border-style: solid;
     --border-width: 4px;
     --color: #E7E40D;
-    text-transform:unset;
-    font-size: 20px;
-    width: 82%;
-    height: 12%;
+    font-size: 23px;
+    width: 314px;
+    height: 62px;
     --box-shadow: 3px 4px 10px black;
-    letter-spacing: 0px;
-    -webkit-text-stroke-width: 1px;
+    letter-spacing: 1px;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: #E7E40D;
     display: block;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
   }
 #Notificaciones{
     color:#E7E40D;
-    font-size: 25px;
+    font-size: 36px;
     text-align: center;
-    margin-top: 2%;
-    text-shadow: 1px  0px 0px black,  
-               0px  1px 0px black,
-              -1px  0px 0px black,
-               0px -1px 0px black;
+    margin-top: 0.7%;
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 1px 3px 7px black;
+    -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: #E7E40D;
                
 }
 </style>
