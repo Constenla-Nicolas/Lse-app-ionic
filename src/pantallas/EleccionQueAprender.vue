@@ -6,7 +6,9 @@
             <ion-header>
                 <ion-toolbar>
                 <img id="señalarLogo" src="../imagenes/senialar_texto.png">
-                <img id="hamburger" src="../imagenes/Hamburger.png">
+
+                <ion-button id="borgir" router-link="/ajustes" color="none" fill="clear" strong="true">| | |</ion-button>
+
                 </ion-toolbar>
             </ion-header>
             <div class="menuAccesos">
@@ -40,6 +42,20 @@ export default {
 
 </script>
 <style scoped> /* estilo */
+    #borgir{
+        letter-spacing: -4.5px;
+        font-size:36px;
+        height: 80px;
+        width: 40px;
+        text-align: center;
+        position: fixed;
+        margin-top: -1px;
+        margin-left: 120px;
+        transform: rotate(-90deg);
+        --color: black;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+    }
     #señalarLogo{
         width: 43%;
         margin-left: 4%;
