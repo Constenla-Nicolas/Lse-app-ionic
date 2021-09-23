@@ -23,11 +23,12 @@
             <div id="raya"></div>
 
             <div id="opcion">
-            <ion-button id="hitbox" color="none" router-link="/Colores">
+            <ion-button id="hitbox" color="none" router-link="/Notificaciones">
             </ion-button>
                 <div class="titulo" style="margin-bottom: 4%;">
                     <img id="notificacion" src="../imagenes/notificacion.png">
                     NOTIFICACIONES
+                    <ion-img class="map" [src]="picToView" (click)="changeView()"></ion-img>
                 </div>
             </div>
             
