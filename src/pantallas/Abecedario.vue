@@ -1,22 +1,16 @@
 <template>
     <ion-page>
         <ion-content>
-            <div id="contenedorImagenes">
-
-                    <div id="cuadroAmarillo">
-                         <img id="contenedorImagen" src="../imagenes/letras/A.jpg">
-                    </div>
-
-            </div>
-            <div id="bordecito">
-            </div>
+         
+           
             <div id="espacioSalvador">
             </div>
-
+     
             <div class="contenido" id = "arca">
-            <ion-button  v-on:click= "refreshImage('contenedorImagen','../imagenes/letras/B.jpg')" class="botonLetra" id="buttonA">A</ion-button>
-            <ion-button class="botonLetra" id="buttonB" rel="imagenes/letras/A.png">B</ion-button>
-            <ion-button class="botonLetra" id="buttonC">C</ion-button>
+            
+           <ion-button class="botonLetra" @click="showImg('../imagenes/letras/B.jpg')" id="buttonC">A</ion-button>
+            <ion-button class="botonLetra" id="buttonB"  @click="showImg()" rel="imagenes/letras/A.png">B</ion-button>
+            <ion-button class="botonLetra" @click="showImg('../imagenes/letras/B.jpg')" id="buttonC">C</ion-button>
             <ion-button class="botonLetra" id="buttonD">D</ion-button>
             <ion-button class="botonLetra" id="buttonE">E</ion-button>
             <ion-button class="botonLetra" id="buttonF">F</ion-button>
@@ -42,7 +36,15 @@
             <ion-button class="botonLetra" id="buttonY">Y</ion-button>
             <ion-button class="botonLetra" id="buttonZ">Z</ion-button>
             </div>
-
+<vue-easy-lightbox
+      scrollDisabled
+      escDisabled
+      moveDisabled
+      :visible="visible"
+      :imgs="imgs"
+      :index="index"
+      @hide="handleHide"
+    ></vue-easy-lightbox>
             <div id="footer">
             </div>
             <div id="footerBorde">
@@ -58,50 +60,38 @@
  
 <script >
 import { IonButton, IonPage, IonContent} from "@ionic/vue";
-import { createApp} from 'vue'
-import image from "../imagenes/letras/A.jpg"
+import image from "../imagenes/letras/B.jpg"
+ import VueEasyLightbox from 'vue-easy-lightbox';
+ 
  
 export default {
     components: {
         IonButton,
         IonPage,
         IonContent,
+        VueEasyLightbox,
     },
-    data: function () {
-        return {
-            image: image
-        }
+   
+    
+ data() {
+      return {
+        visible: false,
+        index: 0, // default: 0
+        imgs: ''
+      }
     },
     methods: {
-        refreshImage(imgElement, imgURL){    
-            // create a new timestamp 
-            var timestamp = new Date().getTime();  
-  
-            var el = document.getElementById(imgElement);  
-  
-            var queryString = "?t=" + timestamp;    
-   
-            el.src = imgURL + queryString;    
-        }    
+      showImg() {
+        this.imgs = image
+        this.visible = true
+      },
+      handleHide() {
+        this.visible = false
+      }
     }
     
 }
- const app = createApp({
-  data() {
-    return { count: 4 }
-  },
-  el: '#arca',
-  methods: {
-    di: function(msg) {
-        document.getElementById().src="imagenes/letras/"+msg;
-      
-    }
-  }
-})
  
- console.log(app)
-
-
 </script>
 
 <style scoped> /* estilo */
@@ -158,18 +148,8 @@ export default {
     margin-top: 12%;
     text-align: center;
 }
-#bordecito{
-    background-color: #E7E40D;
-    position:fixed;
-      width: 100%;
-      height: 44%;
-      z-index: 8;
-}
-#espacioSalvador{
-      width: 100%;
-      height: 44%;
-      z-index: 7;
-}
+ 
+ 
 .botonLetra{
     --background: #FF68E7;
         --border-radius: 25px;
@@ -191,7 +171,7 @@ export default {
         display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
+   
     text-align: center;
 }
 </style>
