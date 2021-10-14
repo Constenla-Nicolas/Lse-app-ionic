@@ -8,9 +8,9 @@
      
             <div class="contenido" id = "arca">
             
-           <ion-button class="botonLetra" @click="showImg('./A.jpg')" id="buttonC">A</ion-button>
+           <ion-button class="botonLetra" @click="showImg('./img/A.6de99f95.jpg')" id="buttonC">A</ion-button>
             <ion-button class="botonLetra" id="buttonB"  @click="showImg('/img/B.479c9319.jpg')" rel="imagenes/letras/A.png">B</ion-button>
-            <ion-button class="botonLetra" @click="showImg('../imagenes/letras/B.jpg')" id="buttonC">C</ion-button>
+            <ion-button class="botonLetra" @click="showImg('/img/C.098fe73c.jpg')" id="buttonC">C</ion-button>
             <ion-button class="botonLetra" @click="showImg('img/D.8c078d10.jpg')" id="buttonD">D</ion-button>
             <ion-button class="botonLetra" id="buttonE">E</ion-button>
             <ion-button class="botonLetra" id="buttonF">F</ion-button>
@@ -84,7 +84,7 @@ export default {
     methods: {
       showImg(imagenlink) {
           if (cache==imagenlink)
-           console.log(cache)
+           console.log(imagenlink)
           this.imgs = imagenlink
         this.visible = true
       },
