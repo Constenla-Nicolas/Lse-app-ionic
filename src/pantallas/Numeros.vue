@@ -14,7 +14,11 @@
             </div>
 
             <div class="contenido" id = "arca">
-            <ion-button  @click="showImg('https://i.blogs.es/5efe2c/cap_001/450_1000.jpg')" class="botonLetra" id="buttonA">0</ion-button>
+<<<<<<< HEAD
+            <ion-button  @click="showImg('../img/B.jpg')" class="botonLetra" id="buttonA">0</ion-button>
+=======
+            <ion-button  @click="showImg()" class="botonLetra" id="buttonA">0</ion-button>
+>>>>>>> d1d63c0b4587c84d72ed25fe3f7f5575236ae1fc
             <ion-button class="botonLetra" id="buttonB">1</ion-button>
             <ion-button class="botonLetra" id="buttonC">2</ion-button>
             <ion-button class="botonLetra" id="buttonD">3</ion-button>
@@ -68,7 +72,7 @@
 <script >
 import { IonButton, IonPage, IonContent} from "@ionic/vue";
 import VueEasyLightbox from 'vue-easy-lightbox';
- 
+import image from "../imagenes/letras/A.jpg"
 export default {
     components: {
         IonButton,
@@ -86,9 +90,11 @@ export default {
       }
     },
     methods: {
-      showImg(linkImagen) {
-        this.imgs = linkImagen
+      showImg( ) {
+        this.imgs = image
         this.visible = true
+        alert(document.getElementById("contenedorImagen").src);
+        
       },
       handleHide() {
         this.visible = false
