@@ -14,7 +14,7 @@
             </div>
 
             <div class="contenido" id = "arca">
-            <ion-button  @click="showImg('https://i.blogs.es/5efe2c/cap_001/450_1000.jpg')" class="botonLetra" id="buttonA">0</ion-button>
+            <ion-button  @click="showImg('../img/B.jpg')" class="botonLetra" id="buttonA">0</ion-button>
             <ion-button class="botonLetra" id="buttonB">1</ion-button>
             <ion-button class="botonLetra" id="buttonC">2</ion-button>
             <ion-button class="botonLetra" id="buttonD">3</ion-button>
@@ -89,6 +89,8 @@ export default {
       showImg(linkImagen) {
         this.imgs = linkImagen
         this.visible = true
+        alert(document.getElementById("contenedorImagen").src);
+        
       },
       handleHide() {
         this.visible = false

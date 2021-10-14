@@ -28,7 +28,6 @@
                 <div class="titulo" style="margin-bottom: 4%;">
                     <img id="notificacion" src="../imagenes/notificacion.png">
                     NOTIFICACIONES
-                    <ion-img class="map" [src]="picToView" (click)="changeView()"></ion-img>
                 </div>
             </div>
             
@@ -43,7 +42,7 @@
                 </div>
             </div>
             <div id="raya"></div>
-            <ion-button id="volver" class="menuVolver" @click="$router.go(-1)">VOLVER AL MENU <br> PRINCIPAL</ion-button> <!-- cambiar -->
+            <ion-button id="volver" class="menuVolver"  router-link="/EleccionQueHacer">VOLVER AL MENU <br> PRINCIPAL</ion-button> <!-- cambiar -->
         
             
         
