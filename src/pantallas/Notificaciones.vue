@@ -42,7 +42,7 @@
 
             </div>
             </div>
-            <ion-button id="volver" class="menuVolver" router-link="/Ajustes">VOLVER AL MENU <br> PRINCIPAL</ion-button> <!-- cambiar -->
+            <ion-button id="volver" class="menuVolver" router-link="/Ajustes">VOLVER AL MENU <br> DE AJUSTES</ion-button> <!-- cambiar -->
         
             
         

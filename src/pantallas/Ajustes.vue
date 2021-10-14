@@ -28,7 +28,6 @@
                 <div class="titulo" style="margin-bottom: 4%;">
                     <img id="notificacion" src="../imagenes/notificacion.png">
                     NOTIFICACIONES
-                    <ion-img class="map" [src]="picToView" (click)="changeView()"></ion-img>
                 </div>
             </div>
             
