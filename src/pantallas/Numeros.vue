@@ -14,7 +14,7 @@
             </div>
 
             <div class="contenido" id = "arca">
-            <ion-button  v-on:click= "cambiarImagen('contenedorImagen')" class="botonLetra" id="buttonA">0</ion-button>
+            <ion-button  @click="showImg('https://i.blogs.es/5efe2c/cap_001/450_1000.jpg')" class="botonLetra" id="buttonA">0</ion-button>
             <ion-button class="botonLetra" id="buttonB">1</ion-button>
             <ion-button class="botonLetra" id="buttonC">2</ion-button>
             <ion-button class="botonLetra" id="buttonD">3</ion-button>
@@ -41,6 +41,15 @@
             <ion-button class="botonLetra" id="buttonX">24</ion-button>
             <ion-button class="botonLetra" id="buttonY">25</ion-button>
             <ion-button class="botonLetra" id="buttonZ">26</ion-button>
+      <vue-easy-lightbox
+      scrollDisabled
+      escDisabled
+      moveDisabled
+      :visible="visible"
+      :imgs="imgs"
+      :index="index"
+      @hide="handleHide"
+    ></vue-easy-lightbox>
             </div>
 
             <div id="footer">
@@ -58,38 +67,34 @@
  
 <script >
 import { IonButton, IonPage, IonContent} from "@ionic/vue";
-import { createApp} from 'vue'
+import VueEasyLightbox from 'vue-easy-lightbox';
  
 export default {
     components: {
         IonButton,
         IonPage,
         IonContent,
+        VueEasyLightbox
+    },
+    
+
+ data() {
+      return {
+        visible: false,
+        index: 0, // default: 0
+        imgs: ''
+      }
     },
     methods: {
-        cambiarImagen(img) {
-            document.getElementById(img).src = "../imagenes/letras/B.jpg";
-                           }
-    }
-
-    
-}
- const app = createApp({
-  data() {
-    return { count: 4 }
-  },
-  el: '#arca',
-  methods: {
-    di: function(msg) {
-        document.getElementById().src="imagenes/letras/"+msg;
-      
+      showImg(linkImagen) {
+        this.imgs = linkImagen
+        this.visible = true
+      },
+      handleHide() {
+        this.visible = false
+      }
     }
   }
-})
- 
- console.log(app)
-
-
 </script>
 
 <style scoped> /* estilo */
