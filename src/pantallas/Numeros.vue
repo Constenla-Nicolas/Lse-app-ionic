@@ -14,11 +14,9 @@
             </div>
 
             <div class="contenido" id = "arca">
-<<<<<<< HEAD
-            <ion-button  @click="showImg('../img/B.jpg')" class="botonLetra" id="buttonA">0</ion-button>
-=======
+ 
             <ion-button  @click="showImg()" class="botonLetra" id="buttonA">0</ion-button>
->>>>>>> d1d63c0b4587c84d72ed25fe3f7f5575236ae1fc
+ 
             <ion-button class="botonLetra" id="buttonB">1</ion-button>
             <ion-button class="botonLetra" id="buttonC">2</ion-button>
             <ion-button class="botonLetra" id="buttonD">3</ion-button>

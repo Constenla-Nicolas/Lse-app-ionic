@@ -8,10 +8,10 @@
      
             <div class="contenido" id = "arca">
             
-           <ion-button class="botonLetra" @click="showImg('../imagenes/letras/B.jpg')" id="buttonC">A</ion-button>
-            <ion-button class="botonLetra" id="buttonB"  @click="showImg()" rel="imagenes/letras/A.png">B</ion-button>
+           <ion-button class="botonLetra" @click="showImg('./A.jpg')" id="buttonC">A</ion-button>
+            <ion-button class="botonLetra" id="buttonB"  @click="showImg('/img/B.479c9319.jpg')" rel="imagenes/letras/A.png">B</ion-button>
             <ion-button class="botonLetra" @click="showImg('../imagenes/letras/B.jpg')" id="buttonC">C</ion-button>
-            <ion-button class="botonLetra" id="buttonD">D</ion-button>
+            <ion-button class="botonLetra" @click="showImg('img/D.8c078d10.jpg')" id="buttonD">D</ion-button>
             <ion-button class="botonLetra" id="buttonE">E</ion-button>
             <ion-button class="botonLetra" id="buttonF">F</ion-button>
             <ion-button class="botonLetra" id="buttonG">G</ion-button>
@@ -60,7 +60,7 @@
  
 <script >
 import { IonButton, IonPage, IonContent} from "@ionic/vue";
-import image from "../imagenes/letras/B.jpg"
+ 
  import VueEasyLightbox from 'vue-easy-lightbox';
  
  
@@ -72,7 +72,8 @@ export default {
         VueEasyLightbox,
     },
    
-    
+   
+
  data() {
       return {
         visible: false,
@@ -81,8 +82,10 @@ export default {
       }
     },
     methods: {
-      showImg() {
-        this.imgs = image
+      showImg(imagenlink) {
+          if (cache==imagenlink)
+           console.log(cache)
+          this.imgs = imagenlink
         this.visible = true
       },
       handleHide() {
@@ -91,7 +94,15 @@ export default {
     }
     
 }
- 
+  const cache ={};
+
+function importAll(r){
+    r.keys().forEach((key)=>(cache[key]=r(key)));
+}
+
+importAll(require.context('../imagenes/letras',true, /\.jpg$/));
+
+console.log(cache)
 </script>
 
 <style scoped> /* estilo */
