@@ -42,7 +42,7 @@
 
             </div>
             </div>
-            <ion-button id="volver" class="menuVolver" router-link="/Colores">VOLVER AL MENU <br> PRINCIPAL</ion-button> <!-- cambiar -->
+            <ion-button id="volver" class="menuVolver" @click="$router.go(-1)">VOLVER AL MENU <br> PRINCIPAL</ion-button> <!-- cambiar -->
         
             
         
