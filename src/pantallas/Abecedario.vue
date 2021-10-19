@@ -1,14 +1,17 @@
 <template>
     <ion-page>
         <ion-content>
-         
-           
+           <div id="contenedorTexto">
+                <p id="textoArriba"> PRESIONE UN NUMERO </p>
+            </div>
+            <div id="bordecito">
+            </div>
             <div id="espacioSalvador">
             </div>
      
             <div class="contenido" id = "arca">
             
-           <ion-button class="botonLetra" @click="showImg('../imagenes/letras/B.jpg')" id="buttonC">A</ion-button>
+           <ion-button class="botonLetra" @click="showImg('https://fondosmil.com/fondo/17051.jpg')" id="buttonC">A</ion-button>
             <ion-button class="botonLetra" id="buttonB"  @click="showImg()" rel="imagenes/letras/A.png">B</ion-button>
             <ion-button class="botonLetra" @click="showImg('../imagenes/letras/B.jpg')" id="buttonC">C</ion-button>
             <ion-button class="botonLetra" id="buttonD">D</ion-button>
@@ -44,7 +47,16 @@
       :imgs="imgs"
       :index="index"
       @hide="handleHide"
-    ></vue-easy-lightbox>
+    >
+    <template v-slot:toolbar="{ toolbarMethods }">
+    <button id="botonZoom" @click="toolbarMethods.zoomIn">
+         <img id="zoom" src="../imagenes/zoomIn.png">
+    </button>
+    <button id="botonZoom" @click="toolbarMethods.zoomOut">
+         <img id="zoom" src="../imagenes/zoomOut.png">
+    </button>
+  </template>
+    </vue-easy-lightbox>
             <div id="footer">
             </div>
             <div id="footerBorde">
@@ -60,7 +72,6 @@
  
 <script >
 import { IonButton, IonPage, IonContent} from "@ionic/vue";
-import image from "../imagenes/letras/B.jpg"
  import VueEasyLightbox from 'vue-easy-lightbox';
  
  
@@ -81,7 +92,7 @@ export default {
       }
     },
     methods: {
-      showImg() {
+      showImg(image) {
         this.imgs = image
         this.visible = true
       },
@@ -100,6 +111,12 @@ export default {
     width: 55%;
     margin-left: auto;
     margin-right: auto;
+}
+#botonZoom{
+    width: 15%;
+    margin-right: -8%;
+    margin-left: 25%;
+    margin-top: 140%;
 }
 #volver{
     --background: #734299;
@@ -127,14 +144,30 @@ export default {
     height: 1%;
     background-color: #E7E40D;
 }
+#textoArriba{
+      color: #E7E40D;
+        text-transform:unset;
+        font-size: 36px;
+        width: 314px;
+        height: 62px;
+        --box-shadow: 3px 4px 10px black;
+        letter-spacing: 1px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #E7E40D;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 6px;
+}
 #footerBorde{
     width: 100%;
 }
-#contenedorImagenes{
+#contenedorTexto{
       background-color: #553071;
       position:fixed;
       width: 100%;
-      height: 43%;
+      height: 12%;
       z-index: 9;
 }
 #cuadroAmarillo{
@@ -148,8 +181,18 @@ export default {
     margin-top: 12%;
     text-align: center;
 }
- 
- 
+#bordecito{
+    background-color: #E7E40D;
+    position:fixed;
+      width: 100%;
+      height: 13%;
+      z-index: 8;
+}
+#espacioSalvador{
+      width: 100%;
+      height: 13%;
+      z-index: 7;
+}
 .botonLetra{
     --background: #FF68E7;
         --border-radius: 25px;
@@ -171,7 +214,7 @@ export default {
         display: block;
     margin-left: auto;
     margin-right: auto;
-   
+    margin-top: 10px;
     text-align: center;
 }
 </style>
