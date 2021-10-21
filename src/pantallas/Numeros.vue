@@ -1,12 +1,8 @@
 <template>
     <ion-page>
         <ion-content>
-            <div id="contenedorImagenes">
-
-                    <div id="cuadroAmarillo">
-                         <img id="contenedorImagen" src="../imagenes/letras/A.jpg">
-                    </div>
-
+            <div id="contenedorTexto">
+                <p id="textoArriba"> PRESIONE UN NUMERO </p>
             </div>
             <div id="bordecito">
             </div>
@@ -14,9 +10,7 @@
             </div>
 
             <div class="contenido" id = "arca">
- 
-            <ion-button  @click="showImg()" class="botonLetra" id="buttonA">0</ion-button>
- 
+            <ion-button  @click="showImg('../img/B.jpg')" class="botonLetra" id="buttonA">0</ion-button>
             <ion-button class="botonLetra" id="buttonB">1</ion-button>
             <ion-button class="botonLetra" id="buttonC">2</ion-button>
             <ion-button class="botonLetra" id="buttonD">3</ion-button>
@@ -134,14 +128,30 @@ export default {
     height: 1%;
     background-color: #E7E40D;
 }
+#textoArriba{
+      color: #E7E40D;
+        text-transform:unset;
+        font-size: 36px;
+        width: 314px;
+        height: 62px;
+        --box-shadow: 3px 4px 10px black;
+        letter-spacing: 1px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #E7E40D;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 6px;
+}
 #footerBorde{
     width: 100%;
 }
-#contenedorImagenes{
+#contenedorTexto{
       background-color: #553071;
       position:fixed;
       width: 100%;
-      height: 43%;
+      height: 12%;
       z-index: 9;
 }
 #cuadroAmarillo{
@@ -159,12 +169,12 @@ export default {
     background-color: #E7E40D;
     position:fixed;
       width: 100%;
-      height: 44%;
+      height: 13%;
       z-index: 8;
 }
 #espacioSalvador{
       width: 100%;
-      height: 44%;
+      height: 13%;
       z-index: 7;
 }
 .botonLetra{
