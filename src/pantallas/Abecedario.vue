@@ -1,20 +1,17 @@
 <template>
-    <ion-page>
-        <ion-content>
-           <div id="contenedorTexto">
-                <p id="textoArriba"> PRESIONE UN NUMERO </p>
-            </div>
-            <div id="bordecito">
-            </div>
+    <ion-page onload='printBtn();'>
+        <ion-content >
+         
+           
             <div id="espacioSalvador">
             </div>
      
             <div class="contenido" id = "arca">
             
-           <ion-button class="botonLetra" @click="showImg('https://fondosmil.com/fondo/17051.jpg')" id="buttonA">A</ion-button>
-            <ion-button class="botonLetra" id="buttonB"  @click="showImg()" rel="imagenes/letras/A.png">B</ion-button>
-            <ion-button class="botonLetra" @click="showImg('../imagenes/letras/B.jpg')" id="buttonC">C</ion-button>
-            <ion-button class="botonLetra" id="buttonD">D</ion-button>
+           <ion-button class="botonLetra" @click="showImg('./img/A.6de99f95.jpg')" id="buttonC">A</ion-button>
+            <ion-button class="botonLetra" id="buttonB"  @click="showImg('/img/B.479c9319.jpg')" rel="imagenes/letras/A.png">B</ion-button>
+            <ion-button class="botonLetra" @click="showImg('/img/C.098fe73c.jpg')" id="buttonC">C</ion-button>
+            <ion-button class="botonLetra" @click="showImg('img/D.8c078d10.jpg')" id="buttonD">D</ion-button>
             <ion-button class="botonLetra" id="buttonE">E</ion-button>
             <ion-button class="botonLetra" id="buttonF">F</ion-button>
             <ion-button class="botonLetra" id="buttonG">G</ion-button>
@@ -73,6 +70,7 @@
  
 <script >
 import { IonButton, IonPage, IonContent} from "@ionic/vue";
+ 
  import VueEasyLightbox from 'vue-easy-lightbox';
  
  
@@ -84,7 +82,8 @@ export default {
         VueEasyLightbox,
     },
    
-    
+   
+
  data() {
       return {
         visible: false,
@@ -93,8 +92,10 @@ export default {
       }
     },
     methods: {
-      showImg(image) {
-        this.imgs = image
+      showImg(imagenlink) {
+          if (cache==imagenlink)
+           console.log(imagenlink)
+          this.imgs = imagenlink
         this.visible = true
       },
       handleHide() {
@@ -103,7 +104,27 @@ export default {
     }
     
 }
- 
+  const cache ={};
+
+function importAll(r){
+    r.keys().forEach((key)=>(cache[key]=r(key)));
+}
+
+importAll(require.context('../imagenes/letras',true, /\.jpg$/));
+
+console.log(cache)
+
+ var listBrand =['LEXUS','AUDI','MAYBACK','FERRARI','TOYOTA'];   
+                //the array
+                function printBtn() {
+                    for (var i = 0; i < listBrand.length; i++) {
+                       var btn = document.createElement("button");
+                       var t = document.createTextNode(listBrand[i]);
+                       btn.appendChild(t);
+                       document.body.appendChild(btn);
+                    }
+                }
+                console.log(printBtn)
 </script>
 
 <style scoped> /* estilo */
