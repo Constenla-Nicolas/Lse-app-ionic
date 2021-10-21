@@ -128,12 +128,8 @@ console.log(cache)
 </script>
 
 <style scoped> /* estilo */
-#letraImagen {
-    display: block;
-    width: 55%;
-    margin-left: auto;
-    margin-right: auto;
-}
+
+
 #volver{
     --background: #734299;
         --border-color: black;

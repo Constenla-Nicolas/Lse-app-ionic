@@ -11,7 +11,7 @@
             </div>
 
             <div class="contenido" id = "arca">
-            <ion-button  @click="showImg('../img/B.jpg')" class="botonLetra" id="buttonA">0</ion-button>
+            <ion-button  @click="showImg('./img/A.6de99f95.jpg')" class="botonLetra" id="buttonA">0</ion-button>
             <ion-button class="botonLetra" id="buttonB">1</ion-button>
             <ion-button class="botonLetra" id="buttonC">2</ion-button>
             <ion-button class="botonLetra" id="buttonD">3</ion-button>
@@ -75,7 +75,6 @@
 <script >
 import { IonButton, IonPage, IonContent} from "@ionic/vue";
 import VueEasyLightbox from 'vue-easy-lightbox';
-import image from "../imagenes/letras/A.jpg"
 export default {
     components: {
         IonButton,
@@ -93,17 +92,27 @@ export default {
       }
     },
     methods: {
-      showImg( ) {
-        this.imgs = image
+      showImg(imagenlink) {
+          if (cache==imagenlink)
+           console.log(imagenlink)
+          this.imgs = imagenlink
         this.visible = true
-        alert(document.getElementById("contenedorImagen").src);
-        
       },
       handleHide() {
         this.visible = false
       }
     }
-  }
+    
+}
+  const cache ={};
+
+function importAll(r){
+    r.keys().forEach((key)=>(cache[key]=r(key)));
+}
+
+importAll(require.context('../imagenes/letras',true, /\.jpg$/));
+
+console.log(cache)
 </script>
 
 <style scoped> /* estilo */
@@ -112,27 +121,6 @@ export default {
     width: 55%;
     margin-left: auto;
     margin-right: auto;
-}
-#volver{
-    --background: #734299;
-        --border-color: black;
-        --border-radius: 50px;
-        --border-style: solid;
-        
-        --border-width: 4px;
-        --color: #E7E40D;
-        text-transform:unset;
-        font-size: 36px;
-        width: 314px;
-        height: 62px;
-        --box-shadow: 3px 4px 10px black;
-        letter-spacing: 0px;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #E7E40D;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
 }
 #footer{
     width: 100%;
@@ -215,9 +203,8 @@ export default {
 }
 #botonZoom{
     width: 15%;
-    margin-right: -8%;
-    margin-left: 25%;
-    margin-top: 140%;
+    margin-top: 55
+    0px;
 }
 #volver{
     --background: #734299;
