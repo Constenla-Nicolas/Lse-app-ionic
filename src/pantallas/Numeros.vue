@@ -4,6 +4,7 @@
             <div id="contenedorTexto">
                 <p id="textoArriba"> PRESIONE UN NUMERO </p>
             </div>
+
             <div id="bordecito">
             </div>
             <div id="espacioSalvador">
@@ -45,8 +46,18 @@
       :imgs="imgs"
       :index="index"
       @hide="handleHide"
-    ></vue-easy-lightbox>
+    >
+                    <template v-slot:toolbar="{ toolbarMethods }">
+    <button id="botonZoom" @click="toolbarMethods.zoomIn">
+         <img id="zoom" src="../imagenes/zoomIn.png">
+    </button>
+    <button id="botonZoom" @click="toolbarMethods.zoomOut">
+         <img id="zoom" src="../imagenes/zoomOut.png">
+    </button>
+  </template>
+    </vue-easy-lightbox>
             </div>
+
 
             <div id="footer">
             </div>
@@ -143,6 +154,7 @@ export default {
         margin-right: auto;
         text-align: center;
         margin-top: 6px;
+
 }
 #footerBorde{
     width: 100%;
@@ -151,7 +163,7 @@ export default {
       background-color: #553071;
       position:fixed;
       width: 100%;
-      height: 12%;
+      height: 15%;
       z-index: 9;
 }
 #cuadroAmarillo{
@@ -169,12 +181,12 @@ export default {
     background-color: #E7E40D;
     position:fixed;
       width: 100%;
-      height: 13%;
+      height: 16%;
       z-index: 8;
 }
 #espacioSalvador{
       width: 100%;
-      height: 13%;
+      height: 15%;
       z-index: 7;
 }
 .botonLetra{
@@ -200,6 +212,33 @@ export default {
     margin-right: auto;
     margin-top: 10px;
     text-align: center;
+}
+#botonZoom{
+    width: 15%;
+    margin-right: -8%;
+    margin-left: 25%;
+    margin-top: 140%;
+}
+#volver{
+    --background: #734299;
+        --border-color: black;
+        --border-radius: 50px;
+        --border-style: solid;
+        
+        --border-width: 4px;
+        --color: #E7E40D;
+        text-transform:unset;
+        font-size: 36px;
+        width: 314px;
+        height: 62px;
+        --box-shadow: 3px 4px 10px black;
+        letter-spacing: 0px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #E7E40D;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
 }
 </style>
 
