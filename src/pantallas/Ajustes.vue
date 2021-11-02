@@ -34,7 +34,7 @@
             <div id="raya"></div>
 
             <div id="opcion">
-                <ion-button id="hitbox" color="none" router-link="/Colores">
+                <ion-button id="hitbox" color="none" router-link="/Ayuda">
             </ion-button>
                 <div class="titulo" style="margin-bottom: 4.2%;">
                     <img id="ayuda" src="../imagenes/question_mark.png">

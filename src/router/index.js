@@ -10,6 +10,7 @@ import Conceptos from "../pantallas/Conceptos.vue"
 import Testeo from "../pantallas/testeo.vue"
 import Ajustes from "../pantallas/Ajustes.vue"
 import Notificaciones from "../pantallas/Notificaciones.vue"
+import Ayuda from "../pantallas/Ayuda.vue"
 
 const routes = [
   {
@@ -23,6 +24,10 @@ const routes = [
   {
     path: '/ajustes',
     component: Ajustes,
+  },
+  {
+    path: '/ayuda',
+    component: Ayuda,
   },
   {
     path: '/notificaciones',
