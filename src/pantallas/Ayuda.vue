@@ -2,11 +2,10 @@
   <ion-page>
     <ion-content>
 
-        <ion-button  @click="openFullscreen('myvideo');" id="button">AYUDA COLORES</ion-button>
-
        <video  width="320" height="240" id="myvideo" controls>
          <source src="https://www.youtube.com/watch?v=TQSqrht3YR8" type="video/mp4">
         </video>
+        
     </ion-content>
   </ion-page>
 </template>
