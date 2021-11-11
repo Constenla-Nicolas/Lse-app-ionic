@@ -6,7 +6,7 @@
          <source src="/media/ayuda_colores.9b6a7ef6.mp4" type="video/mp4">
         </video>
             <div id="footerSalvador">
-                <ion-button id="volver" router-link="/eleccionQueAprender">VOLVER</ion-button>
+                <ion-button id="volver" router-link="/ajustes">VOLVER</ion-button>
                  <router-view></router-view>
             </div>
     </ion-content>
@@ -14,11 +14,12 @@
 </template>
 
 <script >
-import { IonPage, IonContent} from "@ionic/vue";
+import { IonPage, IonContent, IonButton} from "@ionic/vue";
 export default {
     components: {
         IonPage,
-        IonContent
+        IonContent,
+        IonButton
     },
     
 
@@ -59,12 +60,25 @@ console.log(cache);
 
 <style scoped>
 
-#button{
-    background-color: #553071;
-      position:fixed;
-      width: 100%;
-      height: 15%;
+#volver{
+    --background: #734299;
+    --border-color: black;
+    --border-radius: 50px;
+    --border-style: solid;
+    --border-width: 4px;
+    --color: #E7E40D;
+    text-transform:unset;
+    font-size: 36px;
+    width: auto;
+    height: auto;
+    --box-shadow: 3px 4px 10px black;
+    letter-spacing: 0px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #E7E40D;
+    display: block;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
 }
-
 
 </style>
