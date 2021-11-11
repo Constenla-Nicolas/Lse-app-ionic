@@ -2,32 +2,58 @@
   <ion-page>
     <ion-content>
 
-       <video  width="320" height="240" id="myvideo" controls>
-         <source src="https://www.youtube.com/watch?v=TQSqrht3YR8" type="video/mp4">
+       <video autoplay="true" muted loop height="600" id="myvideo" style="position: absolute; right: 0; bottom: 0;width:100%; height:100%; z-index: -100; object-fit: cover;">
+         <source src="/media/ayuda_colores.9b6a7ef6.mp4" type="video/mp4">
         </video>
-        
+            <div id="footerSalvador">
+                <ion-button id="volver" router-link="/eleccionQueAprender">VOLVER</ion-button>
+                 <router-view></router-view>
+            </div>
     </ion-content>
   </ion-page>
 </template>
 
-<script>
-import {IonPage, IonContent} from "@ionic/vue";
+<script >
+import { IonPage, IonContent} from "@ionic/vue";
 export default {
     components: {
         IonPage,
-        IonContent,
+        IonContent
+    },
+    
+
+ data() {
+      return {
+        visible: false,
+        index: 0, // default: 0
+        imgs: ''
+      }
     },
     methods: {
-      openFullscreen(elem) {
-          document.getElementById(elem).style.marginLeft = 10;
-          alert(document.getElementById(elem).style.marginLeft);
-  }
+      showImg(imagenlink) {
+          if (cache==imagenlink)
+           console.log(imagenlink)
+          this.imgs = imagenlink
+        this.visible = true
+      },
+      handleHide() {
+        this.visible = false
+      },
+      playVideo(){
+        document.getElementById("myvideo").autoplay = true;
+      }
+    }
+    
+}
+  const cache ={};
 
+function importAll(r){
+    r.keys().forEach((key)=>(cache[key]=r(key)));
 }
 
-    }
+importAll(require.context('../videos',true, /\.mp4$/));
 
- 
+console.log(cache);
 
 </script>
 
@@ -39,9 +65,6 @@ export default {
       width: 100%;
       height: 15%;
 }
-#myvideo{
-    position:fixed;
-    margin-left: 500%;
-}
+
 
 </style>
