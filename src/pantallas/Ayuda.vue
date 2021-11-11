@@ -6,17 +6,18 @@
          <source src="/media/ayuda_colores.9b6a7ef6.mp4" type="video/mp4">
         </video>
             <div id="footerSalvador">
-                <ion-button id="volver" router-link="/eleccionQueAprender">VOLVER</ion-button>
-                 <router-view></router-view>
+                <ion-button id="volver" router-link="/ajustes">VOLVER</ion-button>
+              <router-view></router-view>
             </div>
     </ion-content>
   </ion-page>
 </template>
 
 <script >
-import { IonPage, IonContent} from "@ionic/vue";
+import { IonButton, IonPage, IonContent} from "@ionic/vue";
 export default {
     components: {
+        IonButton,
         IonPage,
         IonContent
     },
