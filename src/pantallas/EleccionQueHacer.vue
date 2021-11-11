@@ -17,7 +17,7 @@
            <ion-button id="bttEstudiar" router-link="/EleccionQueAprender">ESTUDIAR</ion-button>
            <br> 
            <br> 
-            <ion-button id="bttPracticar" router-link="/EleccionQueHacer">PRACTICAR</ion-button>
+            <ion-button id="bttPracticar">PRACTICAR</ion-button>
             <br> 
             <br>
             <br>
@@ -38,7 +38,15 @@ export default {
         IonContent,
         IonHeader,
         IonToolbar,
-    }
+    },
+   /* methods: {
+        randomScreen: function() {
+            var listaPracticas=["/src/pantallas/Trivia.vue"];
+            var pantallaRandom=Math.random(listaPracticas);
+           // var cambiarPanRan=document.getElementById("bttPracticar").innerHTML="<ion-button id="bttPracticar" router-link="pantallaRandom">PRACTICAR</ion-button>";
+
+        }   
+    },*/
 }
 
 </script>
