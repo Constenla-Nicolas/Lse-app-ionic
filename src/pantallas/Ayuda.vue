@@ -17,7 +17,6 @@
 import { IonPage, IonContent, IonButton} from "@ionic/vue";
 export default {
     components: {
-        IonButton,
         IonPage,
         IonContent,
         IonButton
